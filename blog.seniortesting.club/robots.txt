@@ -1,0 +1,31 @@
+# robots.txt generated at https://www.sojson.com/robots/
+Crawl-delay: 5
+Disallow: /sitemap_index.xml
+Disallow: /wp-admin/
+Disallow: /comments/feed 
+Disallow: /trackback/ 
+Disallow: /*/trackback 
+Disallow: /feed 
+Disallow: /*/feed
+# fix issues
+Disallow: /wp-content/themes/dux
+Disallow: /wp-content/themes/git
+Disallow: /spring-data-jpa-map-the-native-query-result-to-non-entity-pojo-stack-overflow/alterhu2020
+Disallow: /category/java/
+Disallow: /client/to_webp,
+Disallow: /sb/wp/
+Disallow: /ant-design-vue
+Disallow: /ionic-vue/
+Disallow: /go/*
+Disallow: /page/*
+Disallow: /category/java/*
+Disallow: /category/python/*
+Disallow: /tag/spring/page/*
+Disallow: /tag/python/page/*
+Disallow: /tag/python/page/*
+Disallow: /tag/nuxt/page/*
+Disallow: /blog/*
+Disallow: /sitemap.xml
+Disallow: 
+User-agent: *
+Disallow:

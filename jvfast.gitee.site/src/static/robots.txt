@@ -1,0 +1,5 @@
+# robots.txt generated at https://www.sojson.com/robots/
+Disallow:https://pingbook.top/sitemap_index.xml
+User-agent: *
+Disallow:
+Sitemap: https://pingbook.top/sitemap_index.xml

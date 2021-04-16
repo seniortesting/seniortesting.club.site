@@ -1,0 +1,14 @@
+@import './ueditor.scss';
+@import './crud-quill/quill.core.scss';
+@import './crud-quill/quill.snow.scss';
+@import './crud-quill/quill.bubble.scss';
+
+.fade-enter-active, .fade-leave-active {
+  transition: all .5s;
+}
+.fade-enter, .fade-leave-to  {
+  padding-top: 40px;
+  opacity: 0;
+}
+
+

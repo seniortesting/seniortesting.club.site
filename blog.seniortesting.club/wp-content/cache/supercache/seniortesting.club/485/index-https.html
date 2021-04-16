@@ -1,0 +1,332 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="dns-prefetch" href="//apps.bdimg.com">
+<meta http-equiv="X-UA-Compatible" content="IE=11,IE=10,IE=9,IE=8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-title" content="高级软件测试开发网">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<title>记lombok@Data和@Builder一起用无法添加无参构造方法的坑-高级软件测试开发网</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v13.3 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<link rel="canonical" href="https://seniortesting.club/485/" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="记lombok@Data和@Builder一起用无法添加无参构造方法的坑" />
+<meta property="og:description" content="使用Lombok的@Data和@Builder作为post请求接口接收前台传到后台的参数，还没进入方法，后台报错，主要报错信息：java.lang.IllegalStateException: No primary or default c &hellip;" />
+<meta property="og:url" content="https://seniortesting.club/485/" />
+<meta property="og:site_name" content="高级软件测试开发网" />
+<meta property="article:tag" content="java" />
+<meta property="article:tag" content="lombok" />
+<meta property="article:section" content="程序语言" />
+<meta property="article:published_time" content="2021-01-07T06:35:51+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="使用Lombok的@Data和@Builder作为post请求接口接收前台传到后台的参数，还没进入方法，后台报错，主要报错信息：java.lang.IllegalStateException: No primary or default c [&hellip;]" />
+<meta name="twitter:title" content="记lombok@Data和@Builder一起用无法添加无参构造方法的坑" />
+<meta name="twitter:site" content="@alterhu2020" />
+<meta name="twitter:creator" content="@alterhu2020" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://seniortesting.club/#organization","name":"\u54c1\u535a\u5ba2","url":"https://seniortesting.club/","sameAs":["https://www.linkedin.com/in/walter-hu/","https://www.youtube.com/channel/UChZVouRNu1SLCPvQ-9MVNMA","https://twitter.com/alterhu2020"],"logo":{"@type":"ImageObject","@id":"https://seniortesting.club/#logo","inLanguage":"zh-CN","url":"https://seniortesting.club/wp-content/uploads/2020/03/96d6f2e7e1f705a.png","width":1024,"height":1024,"caption":"\u54c1\u535a\u5ba2"},"image":{"@id":"https://seniortesting.club/#logo"}},{"@type":"WebSite","@id":"https://seniortesting.club/#website","url":"https://seniortesting.club/","name":"\u9ad8\u7ea7\u8f6f\u4ef6\u6d4b\u8bd5\u5f00\u53d1\u7f51","inLanguage":"zh-CN","description":"\u4f18\u8d28\u9879\u76ee\u8f6f\u4ef6\u6d4b\u8bd5\u5f00\u53d1\u548c\u5fc3\u5f97\u4f53\u4f1a\u4ea4\u6d41\uff0c\u52a9\u529b\u9879\u76ee\u5feb\u901f\u8fed\u4ee3\u3002","publisher":{"@id":"https://seniortesting.club/#organization"},"potentialAction":[{"@type":"SearchAction","target":"https://seniortesting.club/?s={search_term_string}","query-input":"required name=search_term_string"}]},{"@type":"WebPage","@id":"https://seniortesting.club/485/#webpage","url":"https://seniortesting.club/485/","name":"\u8bb0lombok@Data\u548c@Builder\u4e00\u8d77\u7528\u65e0\u6cd5\u6dfb\u52a0\u65e0\u53c2\u6784\u9020\u65b9\u6cd5\u7684\u5751","isPartOf":{"@id":"https://seniortesting.club/#website"},"inLanguage":"zh-CN","datePublished":"2021-01-07T06:35:51+00:00","dateModified":"2021-01-07T06:35:51+00:00","potentialAction":[{"@type":"ReadAction","target":["https://seniortesting.club/485/"]}]},{"@type":"Article","@id":"https://seniortesting.club/485/#article","isPartOf":{"@id":"https://seniortesting.club/485/#webpage"},"author":{"@id":"https://seniortesting.club/#/schema/person/2add65291dcdb85da0cd3f334a0a2617"},"headline":"\u8bb0lombok@Data\u548c@Builder\u4e00\u8d77\u7528\u65e0\u6cd5\u6dfb\u52a0\u65e0\u53c2\u6784\u9020\u65b9\u6cd5\u7684\u5751","datePublished":"2021-01-07T06:35:51+00:00","dateModified":"2021-01-07T06:35:51+00:00","commentCount":0,"mainEntityOfPage":{"@id":"https://seniortesting.club/485/#webpage"},"publisher":{"@id":"https://seniortesting.club/#organization"},"keywords":"java,lombok","articleSection":"\u7a0b\u5e8f\u8bed\u8a00","inLanguage":"zh-CN","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://seniortesting.club/485/#respond"]}]},{"@type":["Person"],"@id":"https://seniortesting.club/#/schema/person/2add65291dcdb85da0cd3f334a0a2617","name":"\u535a\u4e3b","image":{"@type":"ImageObject","@id":"https://seniortesting.club/#authorlogo","inLanguage":"zh-CN","url":"https://secure.gravatar.com/avatar/6c0fd351be34e0e4b719ed5e3994b85c?s=96&d=mm&r=g","caption":"\u535a\u4e3b"},"description":"\u79d1\u6280\u9886\u57df\u7231\u597d\u8005\uff0c\u63a2\u7d22\u53d1\u73b0\u7f8e\u597d\u77ac\u95f4\uff01","sameAs":["https://twitter.com/alterhu2020"]}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' />
+<link rel='dns-prefetch' href='//seniortesting.club' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='stylesheet' id='_bootstrap-css'  href='https://seniortesting.club/wp-content/themes/dux/css/bootstrap.min.css?ver=6.0' type='text/css' media='all' />
+<link rel='stylesheet' id='_fontawesome-css'  href='https://seniortesting.club/wp-content/themes/dux/css/font-awesome.min.css?ver=6.0' type='text/css' media='all' />
+<link rel='stylesheet' id='_main-css'  href='https://seniortesting.club/wp-content/themes/dux/css/main.css?ver=6.0' type='text/css' media='all' />
+<link rel='stylesheet' id='enlighter-local-css'  href='https://seniortesting.club/wp-content/plugins/enlighter/resources/EnlighterJS.min.css?ver=3.11.0' type='text/css' media='all' />
+<script type='text/javascript' src='//code.jquery.com/jquery-1.9.1.min.js?ver=6.0'></script>
+<meta name="keywords" content="java, lombok, 程序语言">
+<meta name="description" content="使用Lombok的@Data和@Builder作为post请求接口接收前台传到后台的参数，还没进入方法，后台报错，主要报错信息：java.lang.IllegalStateException: No primary or default constructor found for XXX和java.lang.NoSuchMethodException 判断因为没有无参构造函数，首先想到手动添加无参">
+<style>.container{max-width:1300px}a:hover, .site-navbar li:hover > a, .site-navbar li.active a:hover, .site-navbar a:hover, .search-on .site-navbar li.navto-search a, .topbar a:hover, .site-nav li.current-menu-item > a, .site-nav li.current-menu-parent > a, .site-search-form a:hover, .branding-primary .btn:hover, .title .more a:hover, .excerpt h2 a:hover, .excerpt .meta a:hover, .excerpt-minic h2 a:hover, .excerpt-minic .meta a:hover, .article-content .wp-caption:hover .wp-caption-text, .article-content a, .article-nav a:hover, .relates a:hover, .widget_links li a:hover, .widget_categories li a:hover, .widget_ui_comments strong, .widget_ui_posts li a:hover .text, .widget_ui_posts .nopic .text:hover , .widget_meta ul a:hover, .tagcloud a:hover, .textwidget a, .textwidget a:hover, .sign h3, #navs .item li a, .url, .url:hover, .excerpt h2 a:hover span, .widget_ui_posts a:hover .text span, .widget-navcontent .item-01 li a:hover span, .excerpt-minic h2 a:hover span, .relates a:hover span{color: #FDAC5F;}.btn-primary, .label-primary, .branding-primary, .post-copyright:hover, .article-tags a, .pagination ul > .active > a, .pagination ul > .active > span, .pagenav .current, .widget_ui_tags .items a:hover, .sign .close-link, .pagemenu li.active a, .pageheader, .resetpasssteps li.active, #navs h2, #navs nav, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary, .tag-clouds a:hover{background-color: #FDAC5F;}.btn-primary, .search-input:focus, #bdcs .bdcs-search-form-input:focus, #submit, .plinks ul li a:hover,.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary{border-color: #FDAC5F;}.search-btn, .label-primary, #bdcs .bdcs-search-form-submit, #submit, .excerpt .cat{background-color: #FDAC5F;}.excerpt .cat i{border-left-color:#FDAC5F;}@media (max-width: 720px) {.site-navbar li.active a, .site-navbar li.active a:hover, .m-nav-show .m-icon-nav{color: #FDAC5F;}}@media (max-width: 480px) {.pagination ul > li.next-page a{background-color:#FDAC5F;}}.post-actions .action.action-like,.pagemenu li.current-menu-item > a{background-color: #FDAC5F;}.catleader h1{border-left-color: #FDAC5F;}.loop-product-filters ul .current-cat>a{color: #FDAC5F;}</style><link rel="shortcut icon" href="https://seniortesting.club/favicon.ico">
+<!--[if lt IE 9]><script src="https://seniortesting.club/wp-content/themes/dux/js/libs/html5.min.js"></script><![endif]-->
+</head>
+<body class="post-template-default single single-post postid-485 single-format-standard nav_fixed m-excerpt-cat m-excerpt-time topbar-off comment-open site-layout-2 text-justify-on">
+<header class="header">
+	<div class="container">
+		<div class="logo"><a href="https://seniortesting.club" title="高级软件测试开发网-优质项目软件开发和心得体会交流，助力项目快速迭代,程序开发,算法,区块链"><img src="https://seniortesting.club/wp-content/uploads/2020/03/96d6f2e7e1f705a.png" alt="高级软件测试开发网-优质项目软件开发和心得体会交流，助力项目快速迭代,程序开发,算法,区块链">高级软件测试开发网</a></div>		<div class="brand">高级软件测试开发网<br></div>		<ul class="site-nav site-navbar">
+			<li id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18"><a href="/"><i class="fa fa-home"></i> Home</a></li>
+<li id="menu-item-476" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-476"><a title="pytest" href="https://seniortesting.club/category/pytest/"><img width="16" src="https://docs.pytest.org/en/stable/_static/favicon.png" /> Testing</a></li>
+<li id="menu-item-477" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-477"><a href="https://seniortesting.club/category/karate/"><img width="16" src="https://intuit.github.io/karate/karate-core/src/main/resources/res/karate-logo.svg" /> Development</a></li>
+<li id="menu-item-72" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-72"><a href="https://seniortesting.club/category/software/"><i class="fa fa-language"></i> UI/XD</a></li>
+							<li class="navto-search"><a href="javascript:;" class="search-show active"><i class="fa fa-search"></i></a></li>
+					</ul>
+						<i class="fa fa-bars m-icon-nav"></i>
+			</div>
+</header>
+<div class="site-search">
+	<div class="container">
+		<form method="get" class="site-search-form" action="https://seniortesting.club/" ><input class="search-input" name="s" type="text" placeholder="输入关键字" value=""><button class="search-btn" type="submit"><i class="fa fa-search"></i></button></form>	</div>
+</div>	<div class="breadcrumbs">
+		<div class="container">当前位置：<a href="https://seniortesting.club">高级软件测试开发网</a> <small>></small> <a href="https://seniortesting.club/category/software/">编程开发</a> <small>></small> <a href="https://seniortesting.club/category/software/program/">程序语言</a> <small>></small> 正文</div>
+	</div>
+<section class="container">
+	<div class="content-wrap">
+	<div class="content">
+				<header class="article-header">
+			<h1 class="article-title"><a href="https://seniortesting.club/485/">记lombok@Data和@Builder一起用无法添加无参构造方法的坑</a></h1>
+			<div class="article-meta">
+				<span class="item">2021-01-07</span>
+												<span class="item">分类：<a href="https://seniortesting.club/category/software/program/" rel="category tag">程序语言</a></span>
+				<span class="item post-views">阅读(4)</span>				<span class="item">评论(0)</span>				<span class="item"></span>
+			</div>
+		</header>
+				<article class="article-content">
+						<p>使用Lombok的@Data和@Builder作为post请求接口接收前台传到后台的参数，还没进入方法，后台报错，主要报错信息：java.lang.IllegalStateException: No primary or default constructor found for XXX和java.lang.NoSuchMethodException<br />
+判断因为没有无参构造函数，首先想到手动添加无参构造函数，系统直接不能启动<br />
+问度娘lombok无参构造函数，<br />
+找到一篇文章<a href="https://blog.csdn.net/w605283073/article/details/89221853">记lombok@Data和@Builder一起用无法添加无参构造方法的坑</a><br />
+手动添加无参构造函数，并使用 @Tolerate注解，完美解决</p>
+		</article>
+								            <div class="post-actions">
+            	<a href="javascript:;" etap="like" class="post-like action action-like" data-pid="485"><i class="fa fa-thumbs-o-up"></i>赞(<span>0</span>)</a>            	<a href="javascript:;" class="action action-rewards" data-event="rewards"><i class="fa fa-jpy"></i> 打赏</a>            	            </div>
+        		<div class="post-copyright">转载请注明出处：<a href="https://seniortesting.club">高级软件测试开发网</a> &raquo; <a href="https://seniortesting.club/485/">记lombok@Data和@Builder一起用无法添加无参构造方法的坑</a></div>		
+					<div class="action-share"></div>
+		
+		<div class="article-tags">标签：<a href="https://seniortesting.club/tag/java/" rel="tag">java</a><a href="https://seniortesting.club/tag/lombok/" rel="tag">lombok</a></div>
+		
+				<div class="article-author">
+			<img alt='' data-src='https://secure.gravatar.com/avatar/6c0fd351be34e0e4b719ed5e3994b85c?s=50&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/6c0fd351be34e0e4b719ed5e3994b85c?s=100&#038;d=mm&#038;r=g 2x' class='avatar avatar-50 photo' height='50' width='50' />			<h4><i class="fa fa-user" aria-hidden="true"></i><a title="查看更多文章" href="https://seniortesting.club/author/alterhu2020/">博主</a></h4>
+			科技领域爱好者，探索发现美好瞬间！		</div>
+		
+		            <nav class="article-nav">
+                <span class="article-nav-prev">上一篇<br><a href="https://seniortesting.club/484/" rel="prev">docker简单配置flask的python运行环境脚本</a></span>
+                <span class="article-nav-next"></span>
+            </nav>
+        
+		<div class="asb asb-post asb-post-02"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-1893384651266286"
+     data-ad-slot="7727965566"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>		<div class="relates relates-thumb"><div class="title"><h3>推荐阅读</h3></div><ul><li><a href="https://seniortesting.club/274/"><img data-src="https://seniortesting.club/wp-content/uploads/2020/03/1e48def00ce265e-220x150.jpg" alt="解决CPU飙升的问题，分析java占用大量CPU资源的原因-高级软件测试开发网" src="https://seniortesting.club/wp-content/themes/dux/img/random/6.jpg" class="thumb"></a><a href="https://seniortesting.club/274/">解决CPU飙升的问题，分析java占用大量CPU资源的原因</a></li><li><a href="https://seniortesting.club/484/"><img data-thumb="default" src="https://seniortesting.club/wp-content/themes/dux/img/random/9.jpg" class="thumb"></a><a href="https://seniortesting.club/484/">docker简单配置flask的python运行环境脚本</a></li><li><a href="https://seniortesting.club/483/"><img data-thumb="default" src="https://seniortesting.club/wp-content/themes/dux/img/random/10.jpg" class="thumb"></a><a href="https://seniortesting.club/483/">如何写出安全的、基本功能完善的Bash脚本</a></li><li><a href="https://seniortesting.club/404/"><img data-thumb="default" src="https://seniortesting.club/wp-content/themes/dux/img/random/1.jpg" class="thumb"></a><a href="https://seniortesting.club/404/">前端错误监控 -【Vue】与【Sentry】的结合</a></li></ul></div>		<div class="asb asb-post asb-post-03"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-1893384651266286"
+     data-ad-slot="7727965566"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>		<div class="title" id="comments">
+	<h3>全部评论 <small>抢沙发</small></h3>
+</div>
+<div id="respond" class="no_webshot">
+	
+		<form action="https://seniortesting.club/wp-comments-post.php" method="post" id="commentform">
+			<div class="comt">
+				<div class="comt-title">
+					<img alt='' data-src='https://secure.gravatar.com/avatar/?s=50&#038;d=mm&#038;r=g' srcset='https://secure.gravatar.com/avatar/?s=100&#038;d=mm&#038;r=g 2x' class='avatar avatar-50 photo avatar-default' height='50' width='50' />					<p><a rel="nofollow" id="cancel-comment-reply-link" href="javascript:;">取消</a></p>
+				</div>
+				<div class="comt-box">
+					<textarea placeholder="写下你的评论..." class="input-block-level comt-area" name="comment" id="comment" cols="100%" rows="3" tabindex="1" onkeydown="if(event.ctrlKey&amp;&amp;event.keyCode==13){document.getElementById('submit').click();return false};"></textarea>
+					<div class="comt-ctrl">
+					<div class="position">
+					<a href="javascript:;" id="comment-smiley" title="表情"><b><i class="fa fa-smile-o"></i></b></a>
+					<a href="javascript:" id="font-color" title="颜色"><b><i class="fa fa-font"></i></b></a>
+					<a href="javascript:SIMPALED.Editor.img()" title="插图片"><b><i class="fa fa-image"></i></b></a>
+					<a href="javascript:SIMPALED.Editor.strong()" title="粗体"><b><i class="fa fa-bold"></i></b></a>
+					<a href="javascript:SIMPALED.Editor.em()" title="斜体"><b><i class="fa fa-italic"></i></b></a>
+					<a href="javascript:SIMPALED.Editor.quote()" title="引用"><b><i class="fa fa-quote-left"></i></b></a>
+					<a href="javascript:SIMPALED.Editor.ahref()" title="插链接"><b><i class="fa fa-link"></i></b></a>
+					<a href="javascript:SIMPALED.Editor.del()" title="删除线"><b><i class="fa fa-strikethrough"></i></b></a>
+					<a href="javascript:SIMPALED.Editor.underline()" title="下划线"><b><i class="fa fa-underline"></i></b></a>
+					<a href="javascript:SIMPALED.Editor.code()" title="插代码"><b><i class="fa fa-file-code-o"></i></b></a>
+				</div>
+				<script type="text/javascript">
+/* <![CDATA[ */
+    function grin(tag) {
+      var myField;
+      tag = ' ' + tag + ' ';
+        if (document.getElementById('comment') && document.getElementById('comment').type == 'textarea') {
+        myField = document.getElementById('comment');
+      } else {
+        return false;
+      }
+      if (document.selection) {
+        myField.focus();
+        sel = document.selection.createRange();
+        sel.text = tag;
+        myField.focus();
+      }
+      else if (myField.selectionStart || myField.selectionStart == '0') {
+        var startPos = myField.selectionStart;
+        var endPos = myField.selectionEnd;
+        var cursorPos = startPos;
+        myField.value = myField.value.substring(0, startPos)
+                + tag
+                + myField.value.substring(endPos, myField.value.length);
+        cursorPos += tag.length;
+        myField.focus();
+        myField.selectionStart = cursorPos;
+        myField.selectionEnd = cursorPos;
+      }      else {
+        myField.value += tag;
+        myField.focus();
+      }
+    }
+/* ]]> */
+</script>
+<div id="smiley" style="display: none;z-index: 9999;">
+<a href="javascript:grin(':?:')"      ><img src="https://seniortesting.club/wp-content/themes/dux/img/smilies/icon_question.gif"  alt="" /></a>
+<a href="javascript:grin(':razz:')"   ><img src="https://seniortesting.club/wp-content/themes/dux/img/smilies/icon_razz.gif"      alt="" /></a>
+<a href="javascript:grin(':sad:')"    ><img src="https://seniortesting.club/wp-content/themes/dux/img/smilies/icon_sad.gif"       alt="" /></a>
+<a href="javascript:grin(':evil:')"   ><img src="https://seniortesting.club/wp-content/themes/dux/img/smilies/icon_evil.gif"      alt="" /></a>
+<a href="javascript:grin(':!:')"      ><img src="https://seniortesting.club/wp-content/themes/dux/img/smilies/icon_exclaim.gif"   alt="" /></a>
+<a href="javascript:grin(':smile:')"  ><img src="https://seniortesting.club/wp-content/themes/dux/img/smilies/icon_smile.gif"     alt="" /></a>
+<a href="javascript:grin(':oops:')"   ><img src="https://seniortesting.club/wp-content/themes/dux/img/smilies/icon_redface.gif"   alt="" /></a>
+<a href="javascript:grin(':grin:')"   ><img src="https://seniortesting.club/wp-content/themes/dux/img/smilies/icon_biggrin.gif"   alt="" /></a>
+<a href="javascript:grin(':eek:')"    ><img src="https://seniortesting.club/wp-content/themes/dux/img/smilies/icon_surprised.gif" alt="" /></a>
+<a href="javascript:grin(':shock:')"  ><img src="https://seniortesting.club/wp-content/themes/dux/img/smilies/icon_eek.gif"       alt="" /></a>
+<a href="javascript:grin(':???:')"    ><img src="https://seniortesting.club/wp-content/themes/dux/img/smilies/icon_confused.gif"  alt="" /></a>
+<a href="javascript:grin(':cool:')"   ><img src="https://seniortesting.club/wp-content/themes/dux/img/smilies/icon_cool.gif"      alt="" /></a>
+<a href="javascript:grin(':lol:')"    ><img src="https://seniortesting.club/wp-content/themes/dux/img/smilies/icon_lol.gif"       alt="" /></a>
+<a href="javascript:grin(':mad:')"    ><img src="https://seniortesting.club/wp-content/themes/dux/img/smilies/icon_mad.gif"       alt="" /></a>
+<a href="javascript:grin(':twisted:')"><img src="https://seniortesting.club/wp-content/themes/dux/img/smilies/icon_twisted.gif"   alt="" /></a>
+<a href="javascript:grin(':roll:')"   ><img src="https://seniortesting.club/wp-content/themes/dux/img/smilies/icon_rolleyes.gif"  alt="" /></a>
+<a href="javascript:grin(':wink:')"   ><img src="https://seniortesting.club/wp-content/themes/dux/img/smilies/icon_wink.gif"      alt="" /></a>
+<a href="javascript:grin(':idea:')"   ><img src="https://seniortesting.club/wp-content/themes/dux/img/smilies/icon_idea.gif"      alt="" /></a>
+<a href="javascript:grin(':arrow:')"  ><img src="https://seniortesting.club/wp-content/themes/dux/img/smilies/icon_arrow.gif"     alt="" /></a>
+<a href="javascript:grin(':neutral:')"><img src="https://seniortesting.club/wp-content/themes/dux/img/smilies/icon_neutral.gif"   alt="" /></a>
+<a href="javascript:grin(':cry:')"    ><img src="https://seniortesting.club/wp-content/themes/dux/img/smilies/icon_cry.gif"       alt="" /></a>
+<a href="javascript:grin(':mrgreen:')"><img src="https://seniortesting.club/wp-content/themes/dux/img/smilies/icon_mrgreen.gif"   alt="" /></a>
+</div>
+<div id="fontcolor" style="display: none;">
+<a href="javascript:SIMPALED.Editor.red()" style="background-color: red"></a>
+<a href="javascript:SIMPALED.Editor.green()" style="background-color: green"></a>
+<a href="javascript:SIMPALED.Editor.blue()" style="background-color: blue"></a>
+<a href="javascript:SIMPALED.Editor.magenta()" style="background-color: magenta"></a>
+<a href="javascript:SIMPALED.Editor.yellow()" style="background-color: yellow"></a>
+<a href="javascript:SIMPALED.Editor.chocolate()" style="background-color: chocolate"></a>
+<a href="javascript:SIMPALED.Editor.black()" style="background-color: black"></a>
+<a href="javascript:SIMPALED.Editor.aquamarine()" style="background-color: aquamarine"></a>
+<a href="javascript:SIMPALED.Editor.lime()" style="background-color: lime"></a>
+<a href="javascript:SIMPALED.Editor.fuchsia()" style="background-color: fuchsia"></a>
+<a href="javascript:SIMPALED.Editor.orange()" style="background-color: orange"></a>
+<a href="javascript:SIMPALED.Editor.thistle()" style="background-color: thistle"></a>
+<a href="javascript:SIMPALED.Editor.brown()" style="background-color: brown"></a>
+<a href="javascript:SIMPALED.Editor.peru()" style="background-color: peru"></a>
+<a href="javascript:SIMPALED.Editor.deeppink()" style="background-color: deeppink"></a>
+<a href="javascript:SIMPALED.Editor.purple()" style="background-color: purple"></a>
+<a href="javascript:SIMPALED.Editor.slategray()" style="background-color: slategray"></a>
+<a href="javascript:SIMPALED.Editor.tomato()" style="background-color: tomato"></a>
+</div>
+						<div class="comt-tips"><input type='hidden' name='comment_post_ID' value='485' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+<label for="comment_mail_notify" class="checkbox inline hide" style="padding-top:0"><input type="checkbox" name="comment_mail_notify" id="comment_mail_notify" value="comment_mail_notify" checked="checked"/>有人回复时邮件通知我</label></div>
+						<button type="submit" name="submit" id="submit" tabindex="5">提交评论</button>
+						<!-- <span data-type="comment-insert-smilie" class="muted comt-smilie"><i class="icon-thumbs-up icon12"></i> 表情</span> -->
+					</div>
+				</div>
+
+															<div class="comt-comterinfo" id="comment-author-info" >
+							<ul>
+								<li class="form-inline"><label class="hide" for="author">昵称</label><input class="ipt" type="text" name="author" id="author" value="" tabindex="2" placeholder="昵称"><span class="text-muted">昵称 (必填)</span></li>
+								<li class="form-inline"><label class="hide" for="email">邮箱</label><input class="ipt" type="text" name="email" id="email" value="" tabindex="3" placeholder="邮箱"><span class="text-muted">邮箱 (必填)</span></li>
+								<li class="form-inline"><label class="hide" for="url">网址</label><input class="ipt" type="text" name="url" id="url" value="" tabindex="4" placeholder="网址"><span class="text-muted">网址</span></li>
+							</ul>
+						</div>
+												</div>
+
+		</form>
+	</div>
+	</div>
+	</div>
+	<div class="sidebar">
+<div class="widget widget_ui_posts"><h3>置顶推荐</h3><ul><li><a target="_blank" href="https://seniortesting.club/485/"><span class="thumbnail"><img data-thumb="default" src="https://seniortesting.club/wp-content/themes/dux/img/random/7.jpg" class="thumb"></span><span class="text">记lombok@Data和@Builder一起用无法添加无参构造方法的坑</span><span class="muted">2021-01-07</span></a></li>
+<li><a target="_blank" href="https://seniortesting.club/484/"><span class="thumbnail"><img data-thumb="default" src="https://seniortesting.club/wp-content/themes/dux/img/random/7.jpg" class="thumb"></span><span class="text">docker简单配置flask的python运行环境脚本</span><span class="muted">2021-01-01</span></a></li>
+<li><a target="_blank" href="https://seniortesting.club/483/"><span class="thumbnail"><img data-thumb="default" src="https://seniortesting.club/wp-content/themes/dux/img/random/6.jpg" class="thumb"></span><span class="text">如何写出安全的、基本功能完善的Bash脚本</span><span class="muted">2020-12-28</span></a></li>
+<li><a target="_blank" href="https://seniortesting.club/439/"><span class="thumbnail"><img data-thumb="default" src="https://seniortesting.club/wp-content/themes/dux/img/random/8.jpg" class="thumb"></span><span class="text">并发量太高，Nginx扛不住？这次我错怪Nginx了！！</span><span class="muted">2020-07-24</span></a></li>
+<li><a target="_blank" href="https://seniortesting.club/404/"><span class="thumbnail"><img data-thumb="default" src="https://seniortesting.club/wp-content/themes/dux/img/random/5.jpg" class="thumb"></span><span class="text">前端错误监控 -【Vue】与【Sentry】的结合</span><span class="muted">2020-04-28</span></a></li>
+<li><a target="_blank" href="https://seniortesting.club/335/"><span class="thumbnail"><img data-thumb="default" src="https://seniortesting.club/wp-content/themes/dux/img/random/6.jpg" class="thumb"></span><span class="text">获取网站的Favicon图标并显示在你的网页上.</span><span class="muted">2020-04-09</span></a></li>
+</ul></div></div></section>
+
+
+<footer class="footer">
+	<div class="container">
+						<p>&copy; 2018-2021 <a href="https://seniortesting.club">高级软件测试开发网</a> &nbsp; 保留所有权利. <br/>
+本站资源均来自网络收集，如有侵犯版权请及时电邮alterhu2020@gmail.com 并出示版权证明，我们将及时采取措施移除相关内容链接</p>
+		<script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1278753119'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/stat.php%3Fid%3D1278753119%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));</script>	</div>
+</footer>
+
+	<div class="rewards-popover-mask" data-event="rewards-close"></div>
+	<div class="rewards-popover">
+		<h3>觉得不错就打赏作者一杯咖啡呗</h3>
+				<div class="rewards-popover-item">
+			<h4>支付宝扫一扫打赏</h4>
+			<img src="https://seniortesting.club/wp-content/uploads/2020/03/fa42b816950b79e.png">
+		</div>
+						<div class="rewards-popover-item">
+			<h4>微信扫一扫打赏</h4>
+			<img src="https://seniortesting.club/wp-content/uploads/2020/03/e34ea7e4d4b3916.png">
+		</div>
+				<span class="rewards-popover-close" data-event="rewards-close"><i class="fa fa-close"></i></span>
+	</div>
+
+<div class="rollbar rollbar-rb"><ul><li><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1725641479&site=qq&menu=yes"><i class="fa fa-qq"></i><span>QQ咨询</span></a><h6>QQ咨询<i></i></h6></li><li class="rollbar-qrcode"><a href="javascript:;"><i class="fa fa-qrcode"></i><span>微信咨询</span></a><h6>关注微信<img src="https://seniortesting.club/wp-content/uploads/2020/03/3369fa90a94cc1c.jpg"><i></i></h6></li><li><a href="javascript:(jsui.scrollTo('#comments',-15));"><i class="fa fa-comments"></i><span>去评论</span></a><h6>去评论<i></i></h6></li><li class="rollbar-totop"><a href="javascript:(jsui.scrollTo());"><i class="fa fa-angle-up"></i><span>回顶</span></a><h6>回顶部<i></i></h6></li></ul></div>
+<script>
+window.jsui={
+	www: 'https://seniortesting.club',
+	uri: 'https://seniortesting.club/wp-content/themes/dux',
+	ver: '6.0',
+	roll: [],
+	ajaxpager: '0',
+	url_rp: 'https://seniortesting.club/resetpasswd/'
+};
+</script>
+<script type='text/javascript' src='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js?ver=6.0'></script>
+<script type='text/javascript' src='https://seniortesting.club/wp-content/themes/dux/js/loader.js?ver=6.0'></script>
+<script type='text/javascript' src='https://seniortesting.club/wp-content/plugins/enlighter/resources/mootools-core-yc.js?ver=3.11.0'></script>
+<script type='text/javascript' src='https://seniortesting.club/wp-content/plugins/enlighter/resources/EnlighterJS.min.js?ver=3.11.0'></script>
+<script type='text/javascript' src='https://seniortesting.club/wp-content/plugins/enlighter/resources/plugin/JetpackInfiniteScroll.js?ver=6b4ffec9f8'></script>
+<script type="text/javascript">/* <![CDATA[ */EnlighterJS_Config = {"selector":{"block":"pre.EnlighterJSRAW","inline":"code.EnlighterJSRAW"},"language":"generic","theme":"git","indent":2,"hover":"hoverEnabled","showLinenumbers":true,"rawButton":true,"infoButton":false,"windowButton":false,"rawcodeDoubleclick":true,"grouping":true,"cryptex":{"enabled":false,"email":"mail@example.tld"}};!function(){var a=function(a){var b="Enlighter Error: ";console.error?console.error(b+a):console.log&&console.log(b+a)};return window.addEvent?"undefined"==typeof EnlighterJS?void a("Javascript Resources not loaded yet!"):"undefined"==typeof EnlighterJS_Config?void a("Configuration not loaded yet!"):void window.addEvent("domready",function(){EnlighterJS.Util.Init(EnlighterJS_Config.selector.block,EnlighterJS_Config.selector.inline,EnlighterJS_Config)}):void a("MooTools Framework not loaded yet!")}();;/* ]]> */</script><script>
+/* <![CDATA[ */
+ai_front = {"insertion_before":"BEFORE","insertion_after":"AFTER","insertion_prepend":"PREPEND CONTENT","insertion_append":"APPEND CONTENT","insertion_replace_content":"REPLACE CONTENT","insertion_replace_element":"REPLACE ELEMENT","visible":"VISIBLE","hidden":"HIDDEN","fallback":"FALLBACK","automatically_placed":"Automatically placed by AdSense Auto ads code","cancel":"Cancel","use":"Use","add":"Add","parent":"Parent","cancel_element_selection":"Cancel element selection","select_parent_element":"Select parent element","css_selector":"CSS selector","use_current_selector":"Use current selector","element":"ELEMENT","path":"PATH","selector":"SELECTOR"};
+/* ]]> */
+function b2a(a){var b,c=0,l=0,f="",g=[];if(!a)return a;do{var e=a.charCodeAt(c++);var h=a.charCodeAt(c++);var k=a.charCodeAt(c++);var d=e<<16|h<<8|k;e=63&d>>18;h=63&d>>12;k=63&d>>6;d&=63;g[l++]="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=".charAt(e)+"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=".charAt(h)+"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=".charAt(k)+"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=".charAt(d)}while(c<
+a.length);return f=g.join(""),b=a.length%3,(b?f.slice(0,b-3):f)+"===".slice(b||3)}function a2b(a){var b,c,l,f={},g=0,e=0,h="",k=String.fromCharCode,d=a.length;for(b=0;64>b;b++)f["ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/".charAt(b)]=b;for(c=0;d>c;c++)for(b=f[a.charAt(c)],g=(g<<6)+b,e+=6;8<=e;)((l=255&g>>>(e-=8))||d-2>c)&&(h+=k(l));return h}b64e=function(a){return btoa(encodeURIComponent(a).replace(/%([0-9A-F]{2})/g,function(b,a){return String.fromCharCode("0x"+a)}))};
+b64d=function(a){return decodeURIComponent(atob(a).split("").map(function(a){return"%"+("00"+a.charCodeAt(0).toString(16)).slice(-2)}).join(""))};
+function ai_run_scripts(){ai_insert=function(a,c,e){var d=-1!=c.indexOf(":eq")?jQuery(c):document.querySelectorAll(c);Array.prototype.forEach.call(d,function(b,d){selector_string=b.hasAttribute("id")?"#"+b.getAttribute("id"):b.hasAttribute("class")?"."+b.getAttribute("class").replace(RegExp(" ","g"),"."):"";var f=document.createElement("div");f.innerHTML=e;var g=f.getElementsByClassName("ai-selector-counter")[0];null!=g&&(g.innerText=d+1);g=f.getElementsByClassName("ai-debug-name ai-main")[0];if(null!=g){var k="";"before"==
+a?k=ai_front.insertion_before:"after"==a?k=ai_front.insertion_after:"prepend"==a?k=ai_front.insertion_prepend:"append"==a?k=ai_front.insertion_append:"replace-content"==a?k=ai_front.insertion_replace_content:"replace-element"==a&&(k=ai_front.insertion_replace_element);-1==selector_string.indexOf(".ai-viewports")&&(g.innerText=k+" "+c+" ("+b.tagName.toLowerCase()+selector_string+")")}g=document.createRange().createContextualFragment(f.innerHTML);"before"==a?b.parentNode.insertBefore(g,b):"after"==
+a?b.parentNode.insertBefore(g,b.nextSibling):"prepend"==a?b.insertBefore(g,b.firstChild):"append"==a?b.insertBefore(g,null):"replace-content"==a?b.innerHTML=f.innerHTML:"replace-element"==a&&(b.parentNode.insertBefore(g,b),b.parentNode.removeChild(b))})};
+ai_insert_code=function(a){function c(a,b){return null==a?!1:a.classList?a.classList.contains(b):-1<(" "+a.className+" ").indexOf(" "+b+" ")}function e(a,b){null!=a&&(a.classList?a.classList.add(b):a.className+=" "+b)}function d(a,b){null!=a&&(a.classList?a.classList.remove(b):a.className=a.className.replace(new RegExp("(^|\\b)"+b.split(" ").join("|")+"(\\b|$)","gi")," "))}if("undefined"!=typeof a){var b=!1;if(c(a,"no-visibility-check")||a.offsetWidth||a.offsetHeight||a.getClientRects().length){b=
+a.getAttribute("data-code");var h=a.getAttribute("data-insertion"),f=a.getAttribute("data-selector");if(null!=b)if(null!=h&&null!=f){if(-1!=f.indexOf(":eq")?jQuery(f).length:document.querySelectorAll(f).length)ai_insert(h,f,b64d(b)),d(a,"ai-viewports")}else b=document.createRange().createContextualFragment(b64d(b)),a.parentNode.insertBefore(b,a.nextSibling),d(a,"ai-viewports");b=!0;a=a.getElementsByClassName("ai-check-block");"undefined"!=typeof a[0]&&a[0].parentNode.removeChild(a[0])}else h=a.previousElementSibling,
+c(h,"ai-debug-bar")&&c(h,"ai-debug-script")&&(d(h,"ai-debug-script"),e(h,"ai-debug-viewport-invisible")),d(a,"ai-viewports");return b}};ai_insert_list_code=function(a){var c=document.getElementsByClassName(a)[0];if("undefined"!=typeof c){var e=ai_insert_code(c),d=c.closest("div.code-block");d&&(e||d.removeAttribute("data-ai"),d.classList.remove("ai-list-block"),d.style.visibility="",d.classList.contains("ai-remove-position")&&(d.style.position=""));c.classList.remove(a);e&&ai_process_elements()}};
+ai_insert_viewport_code=function(a){var c=document.getElementsByClassName(a)[0];"undefined"!=typeof c&&(ai_insert_code(c),c.classList.remove(a),ai_process_elements())};ai_insert_code_by_class=function(a){var c=document.getElementsByClassName(a)[0];"undefined"!=typeof c&&(ai_insert_code(c),c.classList.remove(a))};
+ai_insert_client_code=function(a,c){var e=document.getElementsByClassName(a)[0];if("undefined"!=typeof e){var d=e.getAttribute("data-code");null!=d&&ai_check_block()&&ai_check_and_insert_block()&&(e.setAttribute("data-code",d.substring(Math.floor(c/19))),ai_insert_code_by_class(a),e.remove())}};ai_process_elements_active=!1;
+function ai_process_elements(){ai_process_elements_active||setTimeout(function(){ai_process_elements_active=!1;"function"==typeof ai_process_rotations&&ai_process_rotations();"function"==typeof ai_process_lists&&ai_process_lists(jQuery("div.ai-list-data"));"function"==typeof ai_process_ip_addresses&&ai_process_ip_addresses(jQuery("div.ai-ip-data"));"function"==typeof ai_adb_process_blocks&&ai_adb_process_blocks()},5);ai_process_elements_active=!0};
+var $jscomp=$jscomp||{};$jscomp.scope={};$jscomp.createTemplateTagFirstArg=function(a){return a.raw=a};$jscomp.createTemplateTagFirstArgWithRaw=function(a,g){a.raw=g;return a};$jscomp.arrayIteratorImpl=function(a){var g=0;return function(){return g<a.length?{done:!1,value:a[g++]}:{done:!0}}};$jscomp.arrayIterator=function(a){return{next:$jscomp.arrayIteratorImpl(a)}};$jscomp.makeIterator=function(a){var g="undefined"!=typeof Symbol&&Symbol.iterator&&a[Symbol.iterator];return g?g.call(a):$jscomp.arrayIterator(a)};
+jQuery(function(a){function g(a){a=a.match(d);return null!=a&&1<a.length&&"string"===typeof a[1]&&0<a[1].length?a[1].toLowerCase():null}function p(a){try{var e=Date.parse(a);isNaN(e)&&(e=null)}catch(u){e=null}return e}Array.prototype.includes||(Array.prototype.includes=function(a){return!!~this.indexOf(a)});var d=/:\/\/(.[^/:]+)/i;ai_process_lists=function(d){function e(a,c,k){if(0==a.length)return"!@!"==k?!0:c==k;if("object"!=typeof c&&"array"!=typeof c)return!1;var f=a[0];a=a.slice(1);if("*"==f)for(c=
+$jscomp.makeIterator(Object.entries(c)),f=c.next();!f.done;f=c.next()){if(f=$jscomp.makeIterator(f.value),f.next(),f=f.next().value,e(a,f,k))return!0}else if(f in c)return e(a,c[f],k);return!1}function u(a,c,k){if("object"!=typeof a||-1==c.indexOf("["))return!1;c=c.replace(/]| /gi,"").split("[");return e(c,a,k)}d=null==d?a("div.ai-list-data"):d.filter(".ai-list-data");if(d.length){d.removeClass("ai-list-data");var t=document.cookie.split(";");t.forEach(function(a,c){t[c]=a.trim()});var m=getAllUrlParams(window.location.search);
+if(null!=m.referrer)var n=m.referrer;else n=document.referrer,""!=n&&(n=g(n));var v=window.navigator.userAgent,w=v.toLowerCase();if("undefined"!==typeof MobileDetect)var z=new MobileDetect(v);d.each(function(){var d=a(this).closest("div.code-block"),c=!0,k=a(this).attr("referer-list");if("undefined"!=typeof k){k=b64d(k).split(",");var f=a(this).attr("referer-list-type"),h=!1;a.each(k,function(a,b){if(""==b)return!0;if("*"==b.charAt(0))if("*"==b.charAt(b.length-1)){if(b=b.substr(1,
+b.length-2),-1!=n.indexOf(b))return h=!0,!1}else{if(b=b.substr(1),n.substr(-b.length)==b)return h=!0,!1}else if("*"==b.charAt(b.length-1)){if(b=b.substr(0,b.length-1),0==n.indexOf(b))return h=!0,!1}else if("#"==b){if(""==n)return h=!0,!1}else if(b==n)return h=!0,!1});switch(f){case "B":h&&(c=!1);break;case "W":h||(c=!1)}}k=a(this).attr("client-list");if("undefined"!=typeof k&&"undefined"!==typeof z)switch(k=b64d(k).split(","),f=a(this).attr("client-list-type"),h=!1,a.each(k,function(a,b){if(""==b)return!0;
+if("*"==b.charAt(0))if("*"==b.charAt(b.length-1)){if(b=b.substr(1,b.length-2).toLowerCase(),-1!=w.indexOf(b))return h=!0,!1}else{if(b=b.substr(1).toLowerCase(),w.substr(-b.length)==b)return h=!0,!1}else if("*"==b.charAt(b.length-1)){if(b=b.substr(0,b.length-1).toLowerCase(),0==w.indexOf(b))return h=!0,!1}else if(z.is(b))return h=!0,!1}),f){case "B":h&&(c=!1);break;case "W":h||(c=!1)}k=!1;if(c&&(f=a(this).attr("parameter-list"),"undefined"!=typeof f)){f=b64d(f).split(",");var e=a(this).attr("parameter-list-type"),
+g=[];t.forEach(function(a){a=a.split("=");try{var b=JSON.parse(decodeURIComponent(a[1]))}catch(B){b=decodeURIComponent(a[1])}g[a[0]]=b});h=!1;a.each(f,function(a,b){if(-1!=b.indexOf("=")){if(-1!=t.indexOf(b))return h=!0,!1;var c=b.split("=");if(u(g,c[0],c[1]))return h=!0,!1}else if(t.forEach(function(a){a=a.split("=");if(b==a[0])return h=!0,!1}),u(g,b,"!@!"))return h=!0,!1});switch(e){case "B":h&&(c=!1);break;case "W":h||(c=!1)}!c&&a(this).hasClass("ai-list-manual")?(k=!0,a(this).addClass("ai-list-data")):
+a(this).removeClass("ai-list-manual")}var l=a(this).prevAll(".ai-debug-bar.ai-debug-lists");f=""==n?"#":n;l.find(".ai-debug-name.ai-list-info").text(f).attr("title",v);l.find(".ai-debug-name.ai-list-status").text(c?ai_front.visible:ai_front.hidden);f=!1;if(c){var m=a(this).attr("scheduling-start");l=a(this).attr("scheduling-end");var q=a(this).attr("scheduling-days");if("undefined"!=typeof m&&"undefined"!=typeof l&&"undefined"!=typeof q){f=!0;var x=parseInt(a(this).attr("scheduling-fallback"));e=
+parseInt(a(this).attr("gmt"));var r=p(b64d(m))+e;l=p(b64d(l))+e;m=b64d(q).split(",");q=a(this).attr("scheduling-type");var y=(new Date).getTime()+e,A=new Date(y);e=A.getDay();0==e?e=6:e--;r=y>=r&&y<l&&m.includes(e.toString());switch(q){case "B":r=!r}r||(c=!1);q=A.toISOString().split(".")[0].replace("T"," ");l=a(this).prevAll(".ai-debug-bar.ai-debug-scheduling");l.find(".ai-debug-name.ai-scheduling-info").text(q+" "+e);l.find(".ai-debug-name.ai-scheduling-status").text(c?ai_front.visible:ai_front.hidden);
+c||0==x||(l.removeClass("ai-debug-scheduling").addClass("ai-debug-fallback"),l.find(".ai-debug-name.ai-scheduling-status").text(ai_front.fallback+"="+x))}}k||(a(this).css({visibility:"",position:"",width:"",height:"","z-index":""}),c?(d.css({visibility:""}),d.hasClass("ai-remove-position")&&d.css({position:""}),"undefined"!=typeof a(this).data("code")&&(c=b64d(a(this).data("code")),a(this).append(c),ai_process_element(this))):f&&!r&&0!=x?(d.css({visibility:""}),d.hasClass("ai-remove-position")&&d.css({position:""}),
+a(this).next(".ai-fallback").removeClass("ai-fallback"),"undefined"!=typeof a(this).data("fallback-code")?(c=b64d(a(this).data("fallback-code")),a(this).append(c),ai_process_element(this)):a(this).hide(),c=d.attr("data-ai"),"undefined"!==typeof c&&!1!==c&&(c=a(this).attr("fallback-tracking"),"undefined"!==typeof c&&!1!==c&&d.attr("data-ai",c))):(a(this).hide(),d.removeAttr("data-ai").removeClass("ai-track"),d.find(".ai-debug-block").length?(d.css({visibility:""}).removeClass("ai-close"),d.hasClass("ai-remove-position")&&
+d.css({position:""})):d.hide()),a(this).attr("data-code",""),a(this).attr("data-fallback-code",""),d.removeClass("ai-list-block"))})}};a(document).ready(function(a){setTimeout(function(){ai_process_lists()},5)})});
+function ai_process_element(a){setTimeout(function(){"function"==typeof ai_process_rotations_in_element&&ai_process_rotations_in_element(a);"function"==typeof ai_process_lists&&ai_process_lists(jQuery("div.ai-list-data",a));"function"==typeof ai_process_ip_addresses&&ai_process_ip_addresses(jQuery("div.ai-ip-data",a));"function"==typeof ai_adb_process_blocks&&ai_adb_process_blocks(a)},5)}
+function getAllUrlParams(a){var g=a?a.split("?")[1]:window.location.search.slice(1);a={};if(g){g=g.split("#")[0];g=g.split("&");for(var p=0;p<g.length;p++){var d=g[p].split("="),m=void 0,e=d[0].replace(/\[\d*\]/,function(a){m=a.slice(1,-1);return""});d="undefined"===typeof d[1]?"":d[1];e=e.toLowerCase();d=d.toLowerCase();a[e]?("string"===typeof a[e]&&(a[e]=[a[e]]),"undefined"===typeof m?a[e].push(d):a[e][m]=d):a[e]=d}}return a};
+
+ai_js_code = true;
+}
+function ai_wait_for_jquery(){function b(b,c){var a=document.createElement("script");a.src=b;var d=document.getElementsByTagName("head")[0],e=!1;a.onload=a.onreadystatechange=function(){e||this.readyState&&"loaded"!=this.readyState&&"complete"!=this.readyState||(e=!0,c&&c(),a.onload=a.onreadystatechange=null,d.removeChild(a))};d.appendChild(a)}window.jQuery?ai_run_scripts():(ai_jquery_waiting_counter++,4==ai_jquery_waiting_counter&&b("https://seniortesting.club/wp-includes/js/jquery/jquery.js?ver=6.0",function(){b("https://seniortesting.club/wp-includes/js/jquery/jquery-migrate.min.js?ver=5.3.2",null)}),30>ai_jquery_waiting_counter&&
+setTimeout(function(){ai_wait_for_jquery()},50))}ai_jquery_waiting_counter=0;ai_wait_for_jquery();
+
+</script>
+<script type="text/javascript" src="https://seniortesting.club/wp-content/themes/dux/js/comments.js"></script>
+</body>
+</html>
+<!-- Dynamic page generated in 0.135 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2021-01-08 12:09:21 -->
+
+<!-- Compression = gzip -->
+<!-- super cache -->

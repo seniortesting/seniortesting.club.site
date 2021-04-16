@@ -1,0 +1,260 @@
+0000.000 (0) Opened log file at time: Tue, 12 Jan 2021 16:46:23 +0000 on https://seniortesting.club
+0000.005 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.22 WP: 5.3.2 PHP: 7.3.19-1~deb10u1 (fpm-fcgi, Linux bookhub 4.19.0-5-amd64 #1 SMP Debian 4.19.37-5+deb10u2 (2019-08-08) x86_64) MySQL: 8.0.21 WPLANG: zh_CN Server: nginx/1.18.0 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 11.7M | 4M) multisite: N openssl: OpenSSL 1.1.1d  10 Sep 2019 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.009 (0) Free space on disk containing Updraft's temporary directory: 13447.3 MB
+0000.014 (0) Tasks: Backup files:  (schedule: weekly) Backup DB: 1 (schedule: daily)
+0000.017 (0) Processed schedules. Tasks now: Backup files:  Backup DB: 1
+0000.024 (0) Requesting semaphore lock (d) (apparently via scheduler: last_scheduled_action_called_at=1610384626, seconds_ago=85357)
+0000.036 (0) Set semaphore last lock (d) time to 2021-01-12 16:46:23
+0000.040 (0) Semaphore lock (d) complete
+0000.054 (0) Backup run: resumption=0, nonce=f6e04c391ced, file_nonce=f6e04c391ced begun at=1610469983 (0s ago), job type=backup
+0000.061 (0) Scheduling a resumption (1) after 300 seconds (1610470283) in case this run gets aborted
+0000.069 (0) This backup run is not intended for files - skipping
+0000.073 (0) Beginning creation of database dump (WordPress DB)
+0000.081 (0) Testing potential mysqldump binary: /usr/bin/mysqldump
+0000.144 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `blog_7ba9_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!50503 SET character_set_client = utf8m (truncated - 1111 bytes total)
+0000.151 (0) Testing potential mysqldump binary: /bin/mysqldump
+0000.200 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `blog_7ba9_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!50503 SET character_set_client = utf8m (truncated - 1111 bytes total)
+0000.228 (0) Table blog_7ba9_options: Total expected rows (approximate): 604
+0000.245 (0) Table blog_7ba9_options: Total rows added: 607 in 0.01 seconds
+0000.251 (0) Table blog_7ba9_options: finishing file (backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_options.table.gz - 34 KB)
+0000.268 (0) Table blog_7ba9_users: Total expected rows (approximate): 0
+0000.274 (0) Table blog_7ba9_users: Total rows added: 1 in 0.00 seconds
+0000.285 (0) Table blog_7ba9_users: finishing file (backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_users.table.gz - 0.6 KB)
+0000.299 (0) Table blog_7ba9_usermeta: Total expected rows (approximate): 55
+0000.306 (0) Table blog_7ba9_usermeta: Total rows added: 55 in 0.00 seconds
+0000.310 (0) Table blog_7ba9_usermeta: finishing file (backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_usermeta.table.gz - 2.3 KB)
+0000.325 (0) Table blog_7ba9_commentmeta: Total expected rows (approximate): 16
+0000.331 (0) Table blog_7ba9_commentmeta: Total rows added: 16 in 0.00 seconds
+0000.335 (0) Table blog_7ba9_commentmeta: finishing file (backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_commentmeta.table.gz - 0.5 KB)
+0000.351 (0) Table blog_7ba9_comments: Total expected rows (approximate): 19
+0000.358 (0) Table blog_7ba9_comments: Total rows added: 19 in 0.00 seconds
+0000.361 (0) Table blog_7ba9_comments: finishing file (backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_comments.table.gz - 3 KB)
+0000.385 (0) Table blog_7ba9_links: Total expected rows (approximate): 16
+0000.395 (0) Table blog_7ba9_links: Total rows added: 16 in 0.00 seconds
+0000.400 (0) Table blog_7ba9_links: finishing file (backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_links.table.gz - 1.5 KB)
+0000.418 (0) Table blog_7ba9_postmeta: Total expected rows (approximate): 1517
+0000.454 (0) Table blog_7ba9_postmeta: Total rows added: 1535 in 0.03 seconds
+0000.460 (0) Table blog_7ba9_postmeta: finishing file (backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_postmeta.table.gz - 35.4 KB)
+0000.478 (0) Table blog_7ba9_posts: Total expected rows (approximate): 201
+0000.525 (0) Table blog_7ba9_posts: Total rows added: 219 in 0.04 seconds
+0000.531 (0) Table blog_7ba9_posts: finishing file (backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_posts.table.gz - 179.2 KB)
+0000.548 (0) Table blog_7ba9_term_relationships: Total expected rows (approximate): 209
+0000.555 (0) Table blog_7ba9_term_relationships: Total rows added: 209 in 0.00 seconds
+0000.559 (0) Table blog_7ba9_term_relationships: finishing file (backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_term_relationships.table.gz - 1 KB)
+0000.573 (0) Table blog_7ba9_term_taxonomy: Total expected rows (approximate): 115
+0000.581 (0) Table blog_7ba9_term_taxonomy: Total rows added: 115 in 0.00 seconds
+0000.586 (0) Table blog_7ba9_term_taxonomy: finishing file (backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_term_taxonomy.table.gz - 1.7 KB)
+0000.601 (0) Table blog_7ba9_termmeta: Total expected rows (approximate): 0
+0000.607 (0) Table blog_7ba9_termmeta: Total rows added: 0 in 0.00 seconds
+0000.610 (0) Table blog_7ba9_termmeta: finishing file (backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_termmeta.table.gz - 0.4 KB)
+0000.625 (0) Table blog_7ba9_terms: Total expected rows (approximate): 115
+0000.632 (0) Table blog_7ba9_terms: Total rows added: 115 in 0.00 seconds
+0000.636 (0) Table blog_7ba9_terms: finishing file (backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_terms.table.gz - 2 KB)
+0000.651 (0) Table blog_7ba9_yoast_seo_links: Total expected rows (approximate): 368
+0000.660 (0) Table blog_7ba9_yoast_seo_links: Total rows added: 367 in 0.01 seconds
+0000.665 (0) Table blog_7ba9_yoast_seo_links: finishing file (backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_yoast_seo_links.table.gz - 7.6 KB)
+0000.682 (0) Table blog_7ba9_yoast_seo_meta: Total expected rows (approximate): 243
+0000.691 (0) Table blog_7ba9_yoast_seo_meta: Total rows added: 243 in 0.01 seconds
+0000.697 (0) Table blog_7ba9_yoast_seo_meta: finishing file (backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_yoast_seo_meta.table.gz - 1 KB)
+0000.720 (0) Table blog_7ba9_ilj_linkindex: Total expected rows (approximate): 33
+0000.730 (0) Table blog_7ba9_ilj_linkindex: Total rows added: 33 in 0.00 seconds
+0000.740 (0) Table blog_7ba9_ilj_linkindex: finishing file (backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_ilj_linkindex.table.gz - 0.7 KB)
+0000.760 (0) Table blog_7ba9_points_users: Total expected rows (approximate): 0
+0000.771 (0) Table blog_7ba9_points_users: Total rows added: 0 in 0.00 seconds
+0000.777 (0) Table blog_7ba9_points_users: finishing file (backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_points_users.table.gz - 0.4 KB)
+0000.797 (0) Table blog_7ba9_sb2_404: Total expected rows (approximate): 0
+0000.804 (0) Table blog_7ba9_sb2_404: Total rows added: 0 in 0.00 seconds
+0000.808 (0) Table blog_7ba9_sb2_404: finishing file (backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_sb2_404.table.gz - 0.4 KB)
+0000.825 (0) Table blog_7ba9_sb2_autolink: Total expected rows (approximate): 0
+0000.831 (0) Table blog_7ba9_sb2_autolink: Total rows added: 1 in 0.00 seconds
+0000.834 (0) Table blog_7ba9_sb2_autolink: finishing file (backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_sb2_autolink.table.gz - 0.5 KB)
+0000.857 (0) Table blog_7ba9_sb2_bl: Total expected rows (approximate): 0
+0000.863 (0) Table blog_7ba9_sb2_bl: Total rows added: 0 in 0.00 seconds
+0000.867 (0) Table blog_7ba9_sb2_bl: finishing file (backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_sb2_bl.table.gz - 0.5 KB)
+0000.885 (0) Table blog_7ba9_sb2_crawl: Total expected rows (approximate): 0
+0000.891 (0) Table blog_7ba9_sb2_crawl: Total rows added: 0 in 0.00 seconds
+0000.896 (0) Table blog_7ba9_sb2_crawl: finishing file (backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_sb2_crawl.table.gz - 0.4 KB)
+0000.920 (0) Table blog_7ba9_sb2_kw: Total expected rows (approximate): 0
+0000.930 (0) Table blog_7ba9_sb2_kw: Total rows added: 0 in 0.00 seconds
+0000.934 (0) Table blog_7ba9_sb2_kw: finishing file (backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_sb2_kw.table.gz - 0.4 KB)
+0000.953 (0) Table blog_7ba9_sb2_kwdt: Total expected rows (approximate): 0
+0000.960 (0) Table blog_7ba9_sb2_kwdt: Total rows added: 0 in 0.00 seconds
+0000.964 (0) Table blog_7ba9_sb2_kwdt: finishing file (backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_sb2_kwdt.table.gz - 0.3 KB)
+0000.979 (0) Table blog_7ba9_sb2_log: Total expected rows (approximate): 0
+0000.985 (0) Table blog_7ba9_sb2_log: Total rows added: 0 in 0.00 seconds
+0000.989 (0) Table blog_7ba9_sb2_log: finishing file (backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_sb2_log.table.gz - 0.4 KB)
+0001.006 (0) Table blog_7ba9_sb2_urls: Total expected rows (approximate): 0
+0001.014 (0) Table blog_7ba9_sb2_urls: Total rows added: 0 in 0.00 seconds
+0001.019 (0) Table blog_7ba9_sb2_urls: finishing file (backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_sb2_urls.table.gz - 0.4 KB)
+0001.035 (0) Table blog_7ba9_sb2_urls_meta: Total expected rows (approximate): 0
+0001.040 (0) Table blog_7ba9_sb2_urls_meta: Total rows added: 0 in 0.00 seconds
+0001.044 (0) Table blog_7ba9_sb2_urls_meta: finishing file (backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_sb2_urls_meta.table.gz - 0.3 KB)
+0001.060 (0) Table blog_7ba9_tm_taskmeta: Total expected rows (approximate): 0
+0001.066 (0) Table blog_7ba9_tm_taskmeta: Total rows added: 0 in 0.00 seconds
+0001.071 (0) Table blog_7ba9_tm_taskmeta: finishing file (backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_tm_taskmeta.table.gz - 0.4 KB)
+0001.096 (0) Table blog_7ba9_tm_tasks: Total expected rows (approximate): 0
+0001.104 (0) Table blog_7ba9_tm_tasks: Total rows added: 0 in 0.00 seconds
+0001.109 (0) Table blog_7ba9_tm_tasks: finishing file (backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_tm_tasks.table.gz - 0.4 KB)
+0001.117 (0) Skipping table (lacks our prefix (blog_7ba9_)): wadh_fd29_commentmeta
+0001.121 (0) Skipping table (lacks our prefix (blog_7ba9_)): wadh_fd29_comments
+0001.124 (0) Skipping table (lacks our prefix (blog_7ba9_)): wadh_fd29_fr_options
+0001.128 (0) Skipping table (lacks our prefix (blog_7ba9_)): wadh_fd29_fr_post
+0001.133 (0) Skipping table (lacks our prefix (blog_7ba9_)): wadh_fd29_links
+0001.136 (0) Skipping table (lacks our prefix (blog_7ba9_)): wadh_fd29_options
+0001.140 (0) Skipping table (lacks our prefix (blog_7ba9_)): wadh_fd29_postmeta
+0001.143 (0) Skipping table (lacks our prefix (blog_7ba9_)): wadh_fd29_posts
+0001.146 (0) Skipping table (lacks our prefix (blog_7ba9_)): wadh_fd29_term_relationships
+0001.150 (0) Skipping table (lacks our prefix (blog_7ba9_)): wadh_fd29_term_taxonomy
+0001.154 (0) Skipping table (lacks our prefix (blog_7ba9_)): wadh_fd29_termmeta
+0001.157 (0) Skipping table (lacks our prefix (blog_7ba9_)): wadh_fd29_terms
+0001.162 (0) Skipping table (lacks our prefix (blog_7ba9_)): wadh_fd29_usermeta
+0001.166 (0) Skipping table (lacks our prefix (blog_7ba9_)): wadh_fd29_users
+0001.169 (0) Skipping table (lacks our prefix (blog_7ba9_)): wadh_fd29_yoast_seo_links
+0001.174 (0) Skipping table (lacks our prefix (blog_7ba9_)): wadh_fd29_yoast_seo_meta
+0001.177 (0) Skipping table (lacks our prefix (blog_7ba9_)): wady_bdc5_commentmeta
+0001.180 (0) Skipping table (lacks our prefix (blog_7ba9_)): wady_bdc5_comments
+0001.184 (0) Skipping table (lacks our prefix (blog_7ba9_)): wady_bdc5_links
+0001.188 (0) Skipping table (lacks our prefix (blog_7ba9_)): wady_bdc5_options
+0001.192 (0) Skipping table (lacks our prefix (blog_7ba9_)): wady_bdc5_postmeta
+0001.195 (0) Skipping table (lacks our prefix (blog_7ba9_)): wady_bdc5_posts
+0001.198 (0) Skipping table (lacks our prefix (blog_7ba9_)): wady_bdc5_term_relationships
+0001.202 (0) Skipping table (lacks our prefix (blog_7ba9_)): wady_bdc5_term_taxonomy
+0001.206 (0) Skipping table (lacks our prefix (blog_7ba9_)): wady_bdc5_termmeta
+0001.214 (0) Skipping table (lacks our prefix (blog_7ba9_)): wady_bdc5_terms
+0001.218 (0) Skipping table (lacks our prefix (blog_7ba9_)): wady_bdc5_usermeta
+0001.221 (0) Skipping table (lacks our prefix (blog_7ba9_)): wady_bdc5_users
+0001.225 (0) Skipping table (lacks our prefix (blog_7ba9_)): wady_bdc5_yoast_seo_links
+0001.230 (0) Skipping table (lacks our prefix (blog_7ba9_)): wady_bdc5_yoast_seo_meta
+0001.233 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_actionscheduler_actions
+0001.238 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_actionscheduler_claims
+0001.241 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_actionscheduler_groups
+0001.244 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_actionscheduler_logs
+0001.248 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_cao_balance_log
+0001.251 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_cao_coupon
+0001.254 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_cao_order
+0001.257 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_cao_paylog
+0001.267 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_cao_ref_log
+0001.273 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_commentmeta
+0001.278 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_comments
+0001.281 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_erphpdown_card
+0001.285 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_ice_aff
+0001.289 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_ice_down
+0001.294 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_ice_download
+0001.298 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_ice_get_money
+0001.303 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_ice_info
+0001.308 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_ice_money
+0001.313 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_ice_vip
+0001.316 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_links
+0001.320 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_mailchimp_carts
+0001.322 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_mailchimp_jobs
+0001.326 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_options
+0001.330 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_postmeta
+0001.334 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_posts
+0001.337 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_term_relationships
+0001.341 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_term_taxonomy
+0001.345 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_termmeta
+0001.349 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_terms
+0001.352 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_usermeta
+0001.361 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_users
+0001.365 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_wc_admin_note_actions
+0001.369 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_wc_admin_notes
+0001.373 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_wc_category_lookup
+0001.377 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_wc_customer_lookup
+0001.381 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_wc_download_log
+0001.385 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_wc_order_coupon_lookup
+0001.390 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_wc_order_product_lookup
+0001.393 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_wc_order_stats
+0001.400 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_wc_order_tax_lookup
+0001.405 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_wc_product_meta_lookup
+0001.409 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_wc_tax_rate_classes
+0001.413 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_wc_webhooks
+0001.416 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_woocommerce_api_keys
+0001.420 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_woocommerce_attribute_taxonomies
+0001.424 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_woocommerce_downloadable_product_permissions
+0001.427 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_woocommerce_log
+0001.430 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_woocommerce_order_itemmeta
+0001.434 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_woocommerce_order_items
+0001.437 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_woocommerce_payment_tokenmeta
+0001.441 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_woocommerce_payment_tokens
+0001.444 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_woocommerce_sessions
+0001.448 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_woocommerce_shipping_zone_locations
+0001.452 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_woocommerce_shipping_zone_methods
+0001.454 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_woocommerce_shipping_zones
+0001.458 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_woocommerce_tax_rate_locations
+0001.462 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_woocommerce_tax_rates
+0001.465 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_yoast_seo_links
+0001.470 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_yoast_seo_meta
+0001.479 (0) backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_options.table.gz (1/116): adding to final database dump
+0001.490 (0) backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_users.table.gz (2/116): adding to final database dump
+0001.501 (0) backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_usermeta.table.gz (3/116): adding to final database dump
+0001.505 (0) backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_commentmeta.table.gz (4/116): adding to final database dump
+0001.509 (0) backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_comments.table.gz (5/116): adding to final database dump
+0001.512 (0) backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_links.table.gz (6/116): adding to final database dump
+0001.516 (0) backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_postmeta.table.gz (7/116): adding to final database dump
+0001.535 (0) backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_posts.table.gz (8/116): adding to final database dump
+0001.574 (0) backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_term_relationships.table.gz (9/116): adding to final database dump
+0001.582 (0) backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_term_taxonomy.table.gz (10/116): adding to final database dump
+0001.587 (0) backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_termmeta.table.gz (11/116): adding to final database dump
+0001.591 (0) backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_terms.table.gz (12/116): adding to final database dump
+0001.595 (0) backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_yoast_seo_links.table.gz (13/116): adding to final database dump
+0001.601 (0) backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_yoast_seo_meta.table.gz (14/116): adding to final database dump
+0001.605 (0) backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_ilj_linkindex.table.gz (15/116): adding to final database dump
+0001.609 (0) backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_points_users.table.gz (16/116): adding to final database dump
+0001.612 (0) backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_sb2_404.table.gz (17/116): adding to final database dump
+0001.616 (0) backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_sb2_autolink.table.gz (18/116): adding to final database dump
+0001.622 (0) backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_sb2_bl.table.gz (19/116): adding to final database dump
+0001.626 (0) backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_sb2_crawl.table.gz (20/116): adding to final database dump
+0001.630 (0) backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_sb2_kw.table.gz (21/116): adding to final database dump
+0001.634 (0) backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_sb2_kwdt.table.gz (22/116): adding to final database dump
+0001.638 (0) backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_sb2_log.table.gz (23/116): adding to final database dump
+0001.642 (0) backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_sb2_urls.table.gz (24/116): adding to final database dump
+0001.646 (0) backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_sb2_urls_meta.table.gz (25/116): adding to final database dump
+0001.649 (0) backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_tm_taskmeta.table.gz (26/116): adding to final database dump
+0001.652 (0) backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db-table-blog_7ba9_tm_tasks.table.gz (27/116): adding to final database dump
+0001.659 (0) backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db.gz: finished writing out complete database file (248 KB)
+0001.686 (0) Total database tables backed up: 27 (backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db.gz, size: 275647, sha1: 47c02259161d6dc61f0b012f6821ecbe15495145, sha256: 8ca8550b0f92ea9a9ca52ed14d061ab30e848cb6e2d9c5d15e874b73628c1c56)
+0001.708 (0) backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db.gz: db: This file has not yet been successfully uploaded: will queue
+0001.713 (0) Saving backup history. Total backup size: 269.2 KB
+0001.722 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0001.734 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0001.737 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-0818bd1463c49d0b1b9832a78b5fa6bd)
+0003.893 (0) Google Drive: quota usage: used=172.2 MB, total=15360 MB, available=15187.8 MB
+0003.898 (0) Google Drive: backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db.gz: Attempting to upload to Google Drive (into folder id: 1cWqOMvI0r5pDbL_GaU2d8qqiPSllULpL)
+0005.637 (0) Googledrive chunked upload: 100 % uploaded
+0005.653 (0) Google Drive: OK: Archive backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db.gz uploaded in 1.75 seconds
+0005.658 (0) Recording as successfully uploaded: backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db.gz
+0005.666 (0) Deleting local file: backup_2021-01-13-0046_seniortestingclub_f6e04c391ced-db.gz: OK
+0005.681 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0005.686 (0) Number of backup sets in history: 5; groups (db): 1
+0005.691 (0) Examining (for databases) backup set with group_id=0, nonce=f6e04c391ced, datestamp=1610469983 (Jan 12 2021 16:46:23)
+0005.694 (0) This backup set is the backup set just made, so will not be deleted.
+0005.694 (0) Examining (for databases) backup set with group_id=0, nonce=63aafc1dabda, datestamp=1610384626 (Jan 11 2021 17:03:46)
+0005.694 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0005.698 (0) Examining (for databases) backup set with group_id=0, nonce=fae0f53a9c5a, datestamp=1610298796 (Jan 10 2021 17:13:16)
+0005.698 (0) 1610298796: db: this set includes a database (backup_2021-01-11-0113_seniortestingclub_fae0f53a9c5a-db.gz); db count is now 2
+0005.698 (0) 1610298796: db: over retain limit (2); will delete this database
+0005.698 (0) Delete file: backup_2021-01-11-0113_seniortestingclub_fae0f53a9c5a-db.gz, service=googledrive
+0007.339 (0) Google Drive: backup_2021-01-11-0113_seniortestingclub_fae0f53a9c5a-db.gz: Deletion successful
+0007.356 (0) This backup set is now empty; will remove from history
+0007.364 (0) Deleting log file (log.fae0f53a9c5a.txt)
+0007.369 (0) Examining (for databases) backup set with group_id=0, nonce=5fb2be32e041, datestamp=1609952020 (Jan 06 2021 16:53:40)
+0007.369 (0) Examining (for databases) backup set with group_id=0, nonce=3db7e3ac1ee1, datestamp=1609349231 (Dec 30 2020 17:27:11)
+0007.369 (0) Number of backup sets in history: 4; groups (files): 1
+0007.373 (0) Examining (for files) backup set with nonce=f6e04c391ced, datestamp=1610469983 (Jan 12 2021 16:46:23)
+0007.373 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0007.377 (0) Examining (for files) backup set with nonce=63aafc1dabda, datestamp=1610384626 (Jan 11 2021 17:03:46)
+0007.377 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0007.377 (0) Examining (for files) backup set with nonce=5fb2be32e041, datestamp=1609952020 (Jan 06 2021 16:53:40)
+0007.377 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0007.381 (0) Examining (for files) backup set with nonce=3db7e3ac1ee1, datestamp=1609349231 (Dec 30 2020 17:27:11)
+0007.381 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0007.381 (0) Retain: saving new backup history (sets now: 4) and finishing retain operation
+0007.394 (0) Resume backup (f6e04c391ced, 0): finish run
+0007.405 (0) Decremented the semaphore (d) by 1
+0007.414 (0) Semaphore (d) unlocked
+0007.418 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0007.432 (0) The backup apparently succeeded and is now complete
+0007.436 (0) Fetching RSS news feed
+0007.545 (0) Fetched RSS news feed; result is a: SimplePie
+0007.560 (0) Sending email ('仅数据库（文件不是这个特定日程表的一部分）') report (attachments: 0, size: 0 KB) to: alter...
+0007.762 (0) 备份显然是成功的，现在已经完成了。

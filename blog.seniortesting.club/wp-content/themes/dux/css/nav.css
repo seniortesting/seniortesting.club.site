@@ -1,0 +1,85 @@
+.pageheader{overflow:hidden;background-color:#fff;padding:20px 50px;margin-bottom:20px;color:#555}
+.pageheader h1{font-size:30px;margin:0}
+.pageheader h1 small{color:#fff;font-size:12px;margin-left:10px;position:relative;top:-4px}
+.pageheader .note{margin-top:10px;display:inline-block}
+.pageheader p{margin-bottom:0}
+.pageheader .share{float:right;height:28px;margin:-5px 0 0;color:#fff}
+.pageheader .share a{width:30px;height:30px;font-size:17px;display:inline-block;margin:6px;opacity:1;border-radius:20px;text-align:center}
+.pageheader .share .bds_count{border-left-color:#fff}
+.pageheader-mini{padding:15px 0 13px}
+.pageheader-mini h1{font-size:18px}
+.pageheader-mini .share{margin:-5px 0}
+
+#navs{color:#aaa}
+#navs .item{overflow:hidden;position:relative;margin:0 20px 20px;background:#fff;border:1px solid #eee;border-radius:10px}
+#navs .item h2{color:#666;margin:10px;font-size:17px;padding:.3em 1.1em}
+#navs .item .gd{position:absolute;cursor:pointer;right:0;top:0;padding:13px;font-size:12px}
+#navs .item ul{display:inline-block;width:100%;transition:all .2s}
+#navs .item li .navimg{width:30px;height:30px;background-image:linear-gradient(135deg,#abdcff 10%,#0396ff 100%);border-radius:50px;background-size:cover;position:absolute}
+#navs .item li{float:left;width:calc(20% - 11px);padding:7px;border-radius:10px;margin:5px;cursor:pointer;position:relative;font-size:12px;transition:all .2s;height:76px}
+#navs .item li .navt{margin-left:45px}
+#navs .item li .navt p{height:32px;overflow:hidden}
+#navs .item li a{display:inline-block;font-size:14px;font-weight:700;color:#666;word-break:break-all;overflow:hidden;height:22px}
+#navs .item li a img{display:none}
+#navs .item li:hover a{color:#fd8c84}
+#navs .item li:hover{background:#f6f7f8}
+#navs .items{margin-left:180px}
+#navs nav{position:absolute;color:#666}
+#navs nav ul{text-align:center;max-height:85%;overflow-y:auto;-ms-overflow-style:none;-webkit-overflow-scrolling:touch;width:191px}
+#navs nav a{display:block;padding:10px 0}
+#navs nav a:hover{background:0 0}
+body{padding-top:77px}
+#navs nav ul.affix{position:fixed;top:0}
+#navs nav ul.affix-bottom{position:absolute}
+#navs nav.affix{position:fixed;top:0}
+#navs nav.affix-bottom{position:absolute}
+#navs .cat-item .post-item{background:0;height:auto;margin-bottom:4px;padding:0;}
+#navs .cat-item ul{padding:0 10px}
+#navs .cat-item .post-item a{height:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:100%;font-weight:400}
+label.checkbox-group{width:130px;margin-bottom:10px}
+.cat-group{height:200px;background:#f7f8f9;border:1px solid #eee;border-radius:4px;overflow:hidden;padding:5px;overflow-y:auto}
+.sortable-cat-item{background:#e8e8e8;padding:4px;overflow: hidden;white-space: nowrap;border-radius:4px;margin:1px;display:inline-block;cursor:grab;width:calc(100% - 15px);min-width:100px}
+.sortable-cat-item .badge{margin-left: 4px;
+    background: rgba(255, 255, 255, 0.5);
+    color: inherit;}
+#cat-sortable-ok .sortable-cat-item{background:#dfedf1;color:#069cf3}
+
+.page-template-pagesnavs-php .header{border-bottom:1px solid #eaeaea}
+@media (max-width:1024px){#navs .item li{width:calc(25% - 11px)}
+}
+@media (max-width:950px){.pageheader .share{display:block}
+#navs nav ul{width:151px}
+#navs .items{margin-left:135px}
+#navs .item li{width:calc(33.3% - 11px)}
+#navs .item{margin: 0 10px 20px 20px;}
+}
+@media (max-width:720px){#navs .item li{width:calc(50% - 11px)}
+
+}
+@media (max-width:640px){body{padding-top:47px}
+#navs nav ul{width:100%!important;max-height: 95%!important;}
+#navs .items{margin-left:0}
+.pageheader{padding:15px}
+.rollbar .post-navs-an{display:block;}
+nav#qnavs {
+    position: fixed !important;
+    right: -10px;
+    z-index: 991;
+    height: 100%;
+    top: 0!important;
+    transform: translateX(220px);
+    padding-top: 68px;
+    overflow-y: hidden;
+    width: 200px;
+    transition: all .3s;background: #fff;
+    box-shadow: -20px 0 40px 0 rgba(0,0,0,.1);
+}
+nav#qnavs.xs {
+    transform: translateX(0);
+}
+}
+@media (max-width:580px){.pageheader .share{float:none;margin:5px 0;text-align:right}
+#navs .item{margin:0 10px 10px 10px}
+}
+@media (max-width:440px){
+}

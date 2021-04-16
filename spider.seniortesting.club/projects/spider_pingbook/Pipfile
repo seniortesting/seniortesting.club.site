@@ -1,0 +1,20 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+verify_ssl = false
+
+[dev-packages]
+pytest = "*"
+
+[packages]
+requests = "*"
+pymysql = "*"
+beautifulsoup4 ="*"
+lxml ="*"
+js2py ="*"
+selenium = "*"
+scrapy = "*"
+scrapyd-client = "*"
+
+[requires]
+python_version = "3.8"

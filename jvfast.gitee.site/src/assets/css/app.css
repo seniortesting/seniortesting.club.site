@@ -1,0 +1,29 @@
+/**调整垂直距离 **/
+#__nuxt, #__layout, #__layout > div {
+  height: 100vh;
+}
+
+body, html {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  /*基于ant-design规范标准*/
+  font-size: 14px;
+  /*font-family: 'Poppins', sans-serif;*/
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
+  'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol';
+  color: #666;
+  line-height:1.7em;
+  font-weight:400;
+  /*background:#ffffff;*/
+  /*background: url(~assets/img/body-bg.png) no-repeat scroll 0 0;*/
+  /*-webkit-font-smoothing: antialiased;*/
+  /*-moz-font-smoothing: antialiased;*/
+}
+/** {*/
+/*  margin:0px;*/
+/*  padding:0px;*/
+/*  border:none;*/
+/*  outline:none;*/
+/*}*/

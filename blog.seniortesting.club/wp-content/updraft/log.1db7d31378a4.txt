@@ -1,0 +1,477 @@
+0000.001 (0) Opened log file at time: Wed, 13 Jan 2021 16:50:59 +0000 on https://seniortesting.club
+0000.012 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.22 WP: 5.3.2 PHP: 7.3.19-1~deb10u1 (fpm-fcgi, Linux bookhub 4.19.0-5-amd64 #1 SMP Debian 4.19.37-5+deb10u2 (2019-08-08) x86_64) MySQL: 8.0.21 WPLANG: zh_CN Server: nginx/1.18.0 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 11.7M | 2M) multisite: N openssl: OpenSSL 1.1.1d  10 Sep 2019 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.016 (0) Free space on disk containing Updraft's temporary directory: 13444.7 MB
+0000.022 (0) Tasks: Backup files: 1 (schedule: weekly) Backup DB:  (schedule: daily)
+0000.035 (0) Processed schedules. Combining jobs from co-inciding events. Tasks now: Backup files: 1 Backup DB: 1
+0000.047 (0) Requesting semaphore lock (fd) (apparently via scheduler: last_scheduled_action_called_at=1609952020, seconds_ago=604639)
+0000.064 (0) Set semaphore last lock (fd) time to 2021-01-13 16:50:59
+0000.070 (0) Semaphore lock (fd) complete
+0000.090 (0) Backup run: resumption=0, nonce=1db7d31378a4, file_nonce=1db7d31378a4 begun at=1610556659 (0s ago), job type=backup
+0000.097 (0) Scheduling a resumption (1) after 300 seconds (1610556959) in case this run gets aborted
+0000.107 (0) Checking if we have a zip executable available
+0000.114 (0) Creation of backups of directories: beginning
+0000.127 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.323 (0) Total entities for the zip file: 685 directories, 4284 files (0 skipped as non-modified), 62.7 MB
+0000.339 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.348 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.357 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.367 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.376 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.380 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (7.6 MB, 4284 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0001.325 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 600 files added (on-disk size: 3491.7 KB)
+0001.335 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 700 files added (on-disk size: 3491.7 KB)
+0001.345 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 800 files added (on-disk size: 3491.7 KB)
+0001.359 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 900 files added (on-disk size: 3491.7 KB)
+0001.369 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 1000 files added (on-disk size: 3491.7 KB)
+0001.373 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (12.8 MB, 4284 files batched, 501 (1002) added so far); re-opening (prior size: 3491.7 KB)
+0002.762 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 1100 files added (on-disk size: 9604.1 KB)
+0002.777 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 1200 files added (on-disk size: 9604.1 KB)
+0002.788 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 1300 files added (on-disk size: 9604.1 KB)
+0002.798 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 1400 files added (on-disk size: 9604.1 KB)
+0002.812 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 1500 files added (on-disk size: 9604.1 KB)
+0002.818 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (6.5 MB, 4284 files batched, 501 (1503) added so far); re-opening (prior size: 9604.1 KB)
+0003.599 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 1600 files added (on-disk size: 13511.4 KB)
+0003.609 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 1700 files added (on-disk size: 13511.4 KB)
+0003.620 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 1800 files added (on-disk size: 13511.4 KB)
+0003.634 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 1900 files added (on-disk size: 13511.4 KB)
+0003.646 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 2000 files added (on-disk size: 13511.4 KB)
+0003.652 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (7 MB, 4284 files batched, 501 (2004) added so far); re-opening (prior size: 13511.4 KB)
+0005.044 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 2100 files added (on-disk size: 15278.3 KB)
+0005.058 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 2200 files added (on-disk size: 15278.3 KB)
+0005.073 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 2300 files added (on-disk size: 15278.3 KB)
+0005.083 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 2400 files added (on-disk size: 15278.3 KB)
+0005.092 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 2500 files added (on-disk size: 15278.3 KB)
+0005.096 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (4.3 MB, 4284 files batched, 501 (2505) added so far); re-opening (prior size: 15278.3 KB)
+0005.801 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 2600 files added (on-disk size: 16725.4 KB)
+0005.810 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 2700 files added (on-disk size: 16725.4 KB)
+0005.820 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 2800 files added (on-disk size: 16725.4 KB)
+0005.829 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 2900 files added (on-disk size: 16725.4 KB)
+0005.838 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 3000 files added (on-disk size: 16725.4 KB)
+0005.843 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.2 MB, 4284 files batched, 501 (3006) added so far); re-opening (prior size: 16725.4 KB)
+0006.402 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 3100 files added (on-disk size: 17727.5 KB)
+0006.411 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 3200 files added (on-disk size: 17727.5 KB)
+0006.422 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 3300 files added (on-disk size: 17727.5 KB)
+0006.433 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 3400 files added (on-disk size: 17727.5 KB)
+0006.444 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 3500 files added (on-disk size: 17727.5 KB)
+0006.449 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (14.4 MB, 4284 files batched, 501 (3507) added so far); re-opening (prior size: 17727.5 KB)
+0008.420 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 3600 files added (on-disk size: 21735.3 KB)
+0008.432 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 3700 files added (on-disk size: 21735.3 KB)
+0008.441 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 3800 files added (on-disk size: 21735.3 KB)
+0008.452 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 3900 files added (on-disk size: 21735.3 KB)
+0008.461 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 4000 files added (on-disk size: 21735.3 KB)
+0008.466 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.6 MB, 4284 files batched, 501 (4008) added so far); re-opening (prior size: 21735.3 KB)
+0009.248 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 4100 files added (on-disk size: 22641.1 KB)
+0009.258 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip.tmp: 4200 files added (on-disk size: 22641.1 KB)
+0010.431 (0) Created plugins zip (0) - 24024.4 KB in 10.3 s (2332.7 KB/s) (sha1: eb6cefa319254fd364b9d4a1389faa599ae8dda8, sha256: 878990bd5555574b8b9a2b9a4d5c47352552f0edbf9f131eb8a2f735c6067606)
+0010.441 (0) Beginning creation of dump of themes (split every: 400 MB)
+0010.462 (0) Total entities for the zip file: 35 directories, 330 files (0 skipped as non-modified), 6.9 MB
+0010.471 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0010.480 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0010.489 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0011.307 (0) Created themes zip (0) - 3688.3 KB in 0.9 s (4287 KB/s) (sha1: 29ee794378b84a6818fe6ee4c065326afd6c799c, sha256: ff1e9367017a4ae81a134c7f36f61c1fee282d85323e08296cca4c37cd889d45)
+0011.316 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0011.320 (0) Looking for candidates to backup in: /www/web/blog.seniortesting.club/wp-content/uploads
+0011.324 (0) finding files: 2021: adding to list (1)
+0011.328 (0) finding files: smush-e2210573545df0cd0796.log: adding to list (2)
+0011.332 (0) finding files: 2020: adding to list (3)
+0011.335 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0011.359 (0) Total entities for the zip file: 10 directories, 517 files (0 skipped as non-modified), 54.2 MB
+0011.371 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-uploads.zip.tmp: 100 files added (on-disk size: 0 KB)
+0011.380 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 25 MB added on this batch (25.8 MB, 517 files batched, 182 (182) added so far); re-opening (prior size: 0 KB)
+0011.878 (0) A useful amount of data was added after this amount of zip processing: 1.3 s (normalised: 1.2 s, rate: 20631.3 KB/s)
+0011.886 (0) Performance is good - will increase the amount of data we attempt to batch (time=1.2782919406891, normalised_time=1.2408304521653, max_time=11.881315946579, data points known=1, old_max_bytes=26214400, new_max_bytes=150606346)
+0011.896 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-uploads.zip.tmp: 200 files added (on-disk size: 26381.8 KB)
+0011.906 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-uploads.zip.tmp: 300 files added (on-disk size: 26381.8 KB)
+0011.920 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-uploads.zip.tmp: 400 files added (on-disk size: 26381.8 KB)
+0011.931 (0) Zip: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-uploads.zip.tmp: 500 files added (on-disk size: 26381.8 KB)
+0013.634 (0) Created uploads zip (0) - 55551.1 KB in 2.3 s (24217.3 KB/s) (sha1: ba272dc26b86c8bd9db4a7eab1d24d10bf6cfd5b, sha256: 703582550e723d60b4f706b92c54d76a82956530dc6944e2c61d1e2944bb9ca9)
+0013.649 (0) Beginning backup of other directories found in the content directory (index: 0)
+0013.654 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0013.660 (0) Looking for candidates to backup in: /www/web/blog.seniortesting.club/wp-content
+0013.665 (0) finding files: cache: skipping: excluded by options
+0013.668 (0) finding files: advanced-cache.php: adding to list (1)
+0013.672 (0) finding files: wp-cache-config.php: adding to list (2)
+0013.675 (0) finding files: themes: skipping: this is the themes directory
+0013.678 (0) finding files: uploads: skipping: this is the uploads directory
+0013.683 (0) finding files: plugins: skipping: this is the plugins directory
+0013.686 (0) finding files: languages: adding to list (3)
+0013.691 (0) finding files: upgrade: skipping: excluded by options
+0013.694 (0) finding files: index.php: adding to list (4)
+0013.698 (0) finding files: updraft: skipping: this is the updraft directory
+0013.710 (0) Total entities for the zip file: 3 directories, 43 files (0 skipped as non-modified), 3.1 MB
+0014.148 (0) Created others zip (0) - 973.7 KB in 0.4 s (2190.8 KB/s) (sha1: ea96721d4b65ef7b8d45948eaea7485c2722c079, sha256: abd91701e131439c0083295308f0bca628cece5ef3243835627d863176eee7ff)
+0014.187 (0) Saving backup status to database (elements: 8)
+0014.199 (0) Beginning creation of database dump (WordPress DB)
+0014.209 (0) Testing potential mysqldump binary: /usr/bin/mysqldump
+0014.328 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `blog_7ba9_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!50503 SET character_set_client = utf8m (truncated - 1111 bytes total)
+0014.338 (0) Testing potential mysqldump binary: /bin/mysqldump
+0014.390 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `blog_7ba9_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!50503 SET character_set_client = utf8m (truncated - 1111 bytes total)
+0014.427 (0) Table blog_7ba9_options: Total expected rows (approximate): 613
+0014.447 (0) Table blog_7ba9_options: Total rows added: 607 in 0.02 seconds
+0014.452 (0) Table blog_7ba9_options: finishing file (backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_options.table.gz - 34.1 KB)
+0014.467 (0) Table blog_7ba9_users: Total expected rows (approximate): 0
+0014.475 (0) Table blog_7ba9_users: Total rows added: 1 in 0.00 seconds
+0014.479 (0) Table blog_7ba9_users: finishing file (backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_users.table.gz - 0.6 KB)
+0014.495 (0) Table blog_7ba9_usermeta: Total expected rows (approximate): 55
+0014.503 (0) Table blog_7ba9_usermeta: Total rows added: 55 in 0.00 seconds
+0014.507 (0) Table blog_7ba9_usermeta: finishing file (backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_usermeta.table.gz - 2.3 KB)
+0014.522 (0) Table blog_7ba9_commentmeta: Total expected rows (approximate): 16
+0014.529 (0) Table blog_7ba9_commentmeta: Total rows added: 16 in 0.00 seconds
+0014.533 (0) Table blog_7ba9_commentmeta: finishing file (backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_commentmeta.table.gz - 0.5 KB)
+0014.552 (0) Table blog_7ba9_comments: Total expected rows (approximate): 19
+0014.561 (0) Table blog_7ba9_comments: Total rows added: 19 in 0.00 seconds
+0014.565 (0) Table blog_7ba9_comments: finishing file (backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_comments.table.gz - 3 KB)
+0014.583 (0) Table blog_7ba9_links: Total expected rows (approximate): 16
+0014.590 (0) Table blog_7ba9_links: Total rows added: 16 in 0.00 seconds
+0014.594 (0) Table blog_7ba9_links: finishing file (backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_links.table.gz - 1.5 KB)
+0014.611 (0) Table blog_7ba9_postmeta: Total expected rows (approximate): 1517
+0014.647 (0) Table blog_7ba9_postmeta: Total rows added: 1535 in 0.03 seconds
+0014.652 (0) Table blog_7ba9_postmeta: finishing file (backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_postmeta.table.gz - 35.4 KB)
+0014.667 (0) Table blog_7ba9_posts: Total expected rows (approximate): 201
+0014.713 (0) Table blog_7ba9_posts: Total rows added: 219 in 0.04 seconds
+0014.717 (0) Table blog_7ba9_posts: finishing file (backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_posts.table.gz - 179.2 KB)
+0014.734 (0) Table blog_7ba9_term_relationships: Total expected rows (approximate): 209
+0014.742 (0) Table blog_7ba9_term_relationships: Total rows added: 209 in 0.00 seconds
+0014.746 (0) Table blog_7ba9_term_relationships: finishing file (backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_term_relationships.table.gz - 1 KB)
+0014.765 (0) Table blog_7ba9_term_taxonomy: Total expected rows (approximate): 115
+0014.772 (0) Table blog_7ba9_term_taxonomy: Total rows added: 115 in 0.00 seconds
+0014.777 (0) Table blog_7ba9_term_taxonomy: finishing file (backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_term_taxonomy.table.gz - 1.7 KB)
+0014.793 (0) Table blog_7ba9_termmeta: Total expected rows (approximate): 0
+0014.800 (0) Table blog_7ba9_termmeta: Total rows added: 0 in 0.00 seconds
+0014.815 (0) Table blog_7ba9_termmeta: finishing file (backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_termmeta.table.gz - 0.4 KB)
+0014.831 (0) Table blog_7ba9_terms: Total expected rows (approximate): 115
+0014.839 (0) Table blog_7ba9_terms: Total rows added: 115 in 0.00 seconds
+0014.843 (0) Table blog_7ba9_terms: finishing file (backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_terms.table.gz - 2 KB)
+0014.859 (0) Table blog_7ba9_yoast_seo_links: Total expected rows (approximate): 368
+0014.868 (0) Table blog_7ba9_yoast_seo_links: Total rows added: 367 in 0.01 seconds
+0014.873 (0) Table blog_7ba9_yoast_seo_links: finishing file (backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_yoast_seo_links.table.gz - 7.6 KB)
+0014.888 (0) Table blog_7ba9_yoast_seo_meta: Total expected rows (approximate): 243
+0014.894 (0) Table blog_7ba9_yoast_seo_meta: Total rows added: 243 in 0.00 seconds
+0014.898 (0) Table blog_7ba9_yoast_seo_meta: finishing file (backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_yoast_seo_meta.table.gz - 1 KB)
+0014.913 (0) Table blog_7ba9_ilj_linkindex: Total expected rows (approximate): 33
+0014.921 (0) Table blog_7ba9_ilj_linkindex: Total rows added: 33 in 0.00 seconds
+0014.925 (0) Table blog_7ba9_ilj_linkindex: finishing file (backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_ilj_linkindex.table.gz - 0.7 KB)
+0014.945 (0) Table blog_7ba9_points_users: Total expected rows (approximate): 0
+0014.954 (0) Table blog_7ba9_points_users: Total rows added: 0 in 0.00 seconds
+0014.959 (0) Table blog_7ba9_points_users: finishing file (backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_points_users.table.gz - 0.4 KB)
+0014.974 (0) Table blog_7ba9_sb2_404: Total expected rows (approximate): 0
+0014.981 (0) Table blog_7ba9_sb2_404: Total rows added: 0 in 0.00 seconds
+0014.984 (0) Table blog_7ba9_sb2_404: finishing file (backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_sb2_404.table.gz - 0.4 KB)
+0014.999 (0) Table blog_7ba9_sb2_autolink: Total expected rows (approximate): 0
+0015.006 (0) Table blog_7ba9_sb2_autolink: Total rows added: 1 in 0.00 seconds
+0015.011 (0) Table blog_7ba9_sb2_autolink: finishing file (backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_sb2_autolink.table.gz - 0.5 KB)
+0015.025 (0) Table blog_7ba9_sb2_bl: Total expected rows (approximate): 0
+0015.034 (0) Table blog_7ba9_sb2_bl: Total rows added: 0 in 0.00 seconds
+0015.040 (0) Table blog_7ba9_sb2_bl: finishing file (backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_sb2_bl.table.gz - 0.5 KB)
+0015.059 (0) Table blog_7ba9_sb2_crawl: Total expected rows (approximate): 0
+0015.069 (0) Table blog_7ba9_sb2_crawl: Total rows added: 0 in 0.00 seconds
+0015.074 (0) Table blog_7ba9_sb2_crawl: finishing file (backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_sb2_crawl.table.gz - 0.4 KB)
+0015.093 (0) Table blog_7ba9_sb2_kw: Total expected rows (approximate): 0
+0015.099 (0) Table blog_7ba9_sb2_kw: Total rows added: 0 in 0.00 seconds
+0015.104 (0) Table blog_7ba9_sb2_kw: finishing file (backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_sb2_kw.table.gz - 0.4 KB)
+0015.126 (0) Table blog_7ba9_sb2_kwdt: Total expected rows (approximate): 0
+0015.135 (0) Table blog_7ba9_sb2_kwdt: Total rows added: 0 in 0.00 seconds
+0015.139 (0) Table blog_7ba9_sb2_kwdt: finishing file (backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_sb2_kwdt.table.gz - 0.3 KB)
+0015.162 (0) Table blog_7ba9_sb2_log: Total expected rows (approximate): 0
+0015.170 (0) Table blog_7ba9_sb2_log: Total rows added: 0 in 0.00 seconds
+0015.174 (0) Table blog_7ba9_sb2_log: finishing file (backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_sb2_log.table.gz - 0.4 KB)
+0015.191 (0) Table blog_7ba9_sb2_urls: Total expected rows (approximate): 0
+0015.198 (0) Table blog_7ba9_sb2_urls: Total rows added: 0 in 0.00 seconds
+0015.202 (0) Table blog_7ba9_sb2_urls: finishing file (backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_sb2_urls.table.gz - 0.4 KB)
+0015.217 (0) Table blog_7ba9_sb2_urls_meta: Total expected rows (approximate): 0
+0015.248 (0) Table blog_7ba9_sb2_urls_meta: Total rows added: 0 in 0.01 seconds
+0015.255 (0) Table blog_7ba9_sb2_urls_meta: finishing file (backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_sb2_urls_meta.table.gz - 0.3 KB)
+0015.275 (0) Table blog_7ba9_tm_taskmeta: Total expected rows (approximate): 0
+0015.282 (0) Table blog_7ba9_tm_taskmeta: Total rows added: 0 in 0.00 seconds
+0015.286 (0) Table blog_7ba9_tm_taskmeta: finishing file (backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_tm_taskmeta.table.gz - 0.4 KB)
+0015.302 (0) Table blog_7ba9_tm_tasks: Total expected rows (approximate): 0
+0015.314 (0) Table blog_7ba9_tm_tasks: Total rows added: 0 in 0.01 seconds
+0015.319 (0) Table blog_7ba9_tm_tasks: finishing file (backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_tm_tasks.table.gz - 0.4 KB)
+0015.330 (0) Skipping table (lacks our prefix (blog_7ba9_)): wadh_fd29_commentmeta
+0015.334 (0) Skipping table (lacks our prefix (blog_7ba9_)): wadh_fd29_comments
+0015.338 (0) Skipping table (lacks our prefix (blog_7ba9_)): wadh_fd29_fr_options
+0015.341 (0) Skipping table (lacks our prefix (blog_7ba9_)): wadh_fd29_fr_post
+0015.347 (0) Skipping table (lacks our prefix (blog_7ba9_)): wadh_fd29_links
+0015.356 (0) Skipping table (lacks our prefix (blog_7ba9_)): wadh_fd29_options
+0015.360 (0) Skipping table (lacks our prefix (blog_7ba9_)): wadh_fd29_postmeta
+0015.364 (0) Skipping table (lacks our prefix (blog_7ba9_)): wadh_fd29_posts
+0015.369 (0) Skipping table (lacks our prefix (blog_7ba9_)): wadh_fd29_term_relationships
+0015.372 (0) Skipping table (lacks our prefix (blog_7ba9_)): wadh_fd29_term_taxonomy
+0015.375 (0) Skipping table (lacks our prefix (blog_7ba9_)): wadh_fd29_termmeta
+0015.378 (0) Skipping table (lacks our prefix (blog_7ba9_)): wadh_fd29_terms
+0015.382 (0) Skipping table (lacks our prefix (blog_7ba9_)): wadh_fd29_usermeta
+0015.386 (0) Skipping table (lacks our prefix (blog_7ba9_)): wadh_fd29_users
+0015.390 (0) Skipping table (lacks our prefix (blog_7ba9_)): wadh_fd29_yoast_seo_links
+0015.394 (0) Skipping table (lacks our prefix (blog_7ba9_)): wadh_fd29_yoast_seo_meta
+0015.398 (0) Skipping table (lacks our prefix (blog_7ba9_)): wady_bdc5_commentmeta
+0015.402 (0) Skipping table (lacks our prefix (blog_7ba9_)): wady_bdc5_comments
+0015.406 (0) Skipping table (lacks our prefix (blog_7ba9_)): wady_bdc5_links
+0015.409 (0) Skipping table (lacks our prefix (blog_7ba9_)): wady_bdc5_options
+0015.412 (0) Skipping table (lacks our prefix (blog_7ba9_)): wady_bdc5_postmeta
+0015.416 (0) Skipping table (lacks our prefix (blog_7ba9_)): wady_bdc5_posts
+0015.420 (0) Skipping table (lacks our prefix (blog_7ba9_)): wady_bdc5_term_relationships
+0015.423 (0) Skipping table (lacks our prefix (blog_7ba9_)): wady_bdc5_term_taxonomy
+0015.428 (0) Skipping table (lacks our prefix (blog_7ba9_)): wady_bdc5_termmeta
+0015.432 (0) Skipping table (lacks our prefix (blog_7ba9_)): wady_bdc5_terms
+0015.439 (0) Skipping table (lacks our prefix (blog_7ba9_)): wady_bdc5_usermeta
+0015.442 (0) Skipping table (lacks our prefix (blog_7ba9_)): wady_bdc5_users
+0015.448 (0) Skipping table (lacks our prefix (blog_7ba9_)): wady_bdc5_yoast_seo_links
+0015.455 (0) Skipping table (lacks our prefix (blog_7ba9_)): wady_bdc5_yoast_seo_meta
+0015.458 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_actionscheduler_actions
+0015.461 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_actionscheduler_claims
+0015.464 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_actionscheduler_groups
+0015.468 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_actionscheduler_logs
+0015.471 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_cao_balance_log
+0015.475 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_cao_coupon
+0015.478 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_cao_order
+0015.481 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_cao_paylog
+0015.484 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_cao_ref_log
+0015.488 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_commentmeta
+0015.491 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_comments
+0015.495 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_erphpdown_card
+0015.498 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_ice_aff
+0015.502 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_ice_down
+0015.506 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_ice_download
+0015.510 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_ice_get_money
+0015.513 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_ice_info
+0015.516 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_ice_money
+0015.520 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_ice_vip
+0015.524 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_links
+0015.529 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_mailchimp_carts
+0015.534 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_mailchimp_jobs
+0015.538 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_options
+0015.543 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_postmeta
+0015.546 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_posts
+0015.550 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_term_relationships
+0015.554 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_term_taxonomy
+0015.557 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_termmeta
+0015.560 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_terms
+0015.564 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_usermeta
+0015.567 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_users
+0015.571 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_wc_admin_note_actions
+0015.575 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_wc_admin_notes
+0015.579 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_wc_category_lookup
+0015.583 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_wc_customer_lookup
+0015.586 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_wc_download_log
+0015.590 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_wc_order_coupon_lookup
+0015.594 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_wc_order_product_lookup
+0015.598 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_wc_order_stats
+0015.602 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_wc_order_tax_lookup
+0015.606 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_wc_product_meta_lookup
+0015.610 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_wc_tax_rate_classes
+0015.613 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_wc_webhooks
+0015.617 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_woocommerce_api_keys
+0015.621 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_woocommerce_attribute_taxonomies
+0015.636 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_woocommerce_downloadable_product_permissions
+0015.641 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_woocommerce_log
+0015.645 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_woocommerce_order_itemmeta
+0015.648 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_woocommerce_order_items
+0015.653 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_woocommerce_payment_tokenmeta
+0015.659 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_woocommerce_payment_tokens
+0015.664 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_woocommerce_sessions
+0015.668 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_woocommerce_shipping_zone_locations
+0015.672 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_woocommerce_shipping_zone_methods
+0015.675 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_woocommerce_shipping_zones
+0015.679 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_woocommerce_tax_rate_locations
+0015.683 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_woocommerce_tax_rates
+0015.687 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_yoast_seo_links
+0015.691 (0) Skipping table (lacks our prefix (blog_7ba9_)): wazy_a75d_yoast_seo_meta
+0015.700 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_options.table.gz (1/116): adding to final database dump
+0015.716 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_users.table.gz (2/116): adding to final database dump
+0015.721 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_usermeta.table.gz (3/116): adding to final database dump
+0015.725 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_commentmeta.table.gz (4/116): adding to final database dump
+0015.730 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_comments.table.gz (5/116): adding to final database dump
+0015.734 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_links.table.gz (6/116): adding to final database dump
+0015.738 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_postmeta.table.gz (7/116): adding to final database dump
+0015.763 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_posts.table.gz (8/116): adding to final database dump
+0015.805 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_term_relationships.table.gz (9/116): adding to final database dump
+0015.815 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_term_taxonomy.table.gz (10/116): adding to final database dump
+0015.828 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_termmeta.table.gz (11/116): adding to final database dump
+0015.833 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_terms.table.gz (12/116): adding to final database dump
+0015.838 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_yoast_seo_links.table.gz (13/116): adding to final database dump
+0015.844 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_yoast_seo_meta.table.gz (14/116): adding to final database dump
+0015.866 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_ilj_linkindex.table.gz (15/116): adding to final database dump
+0015.870 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_points_users.table.gz (16/116): adding to final database dump
+0015.874 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_sb2_404.table.gz (17/116): adding to final database dump
+0015.878 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_sb2_autolink.table.gz (18/116): adding to final database dump
+0015.882 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_sb2_bl.table.gz (19/116): adding to final database dump
+0015.886 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_sb2_crawl.table.gz (20/116): adding to final database dump
+0015.890 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_sb2_kw.table.gz (21/116): adding to final database dump
+0015.895 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_sb2_kwdt.table.gz (22/116): adding to final database dump
+0015.898 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_sb2_log.table.gz (23/116): adding to final database dump
+0015.902 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_sb2_urls.table.gz (24/116): adding to final database dump
+0015.906 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_sb2_urls_meta.table.gz (25/116): adding to final database dump
+0015.910 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_tm_taskmeta.table.gz (26/116): adding to final database dump
+0015.914 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db-table-blog_7ba9_tm_tasks.table.gz (27/116): adding to final database dump
+0015.919 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db.gz: finished writing out complete database file (248 KB)
+0015.947 (0) Total database tables backed up: 27 (backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db.gz, size: 275741, sha1: a277f22bd7c4b62aed06aa20ac0cb5d0676d416d, sha256: dae4812624bed3e66d3e524647cd2ff094992ec563c0f08a42d2a324ac2cdb17)
+0015.971 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0015.975 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0015.979 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0015.983 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-others.zip: others: This file has not yet been successfully uploaded: will queue
+0015.988 (0) backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db.gz: db: This file has not yet been successfully uploaded: will queue
+0015.992 (0) Saving backup history. Total backup size: 82.5 MB
+0016.002 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0016.015 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0016.018 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-0818bd1463c49d0b1b9832a78b5fa6bd)
+0018.118 (0) Google Drive: quota usage: used=172.2 MB, total=15360 MB, available=15187.8 MB
+0018.123 (0) Google Drive: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip: Attempting to upload to Google Drive (into folder id: 1cWqOMvI0r5pDbL_GaU2d8qqiPSllULpL)
+0018.812 (0) Googledrive chunked upload: 4.3 % uploaded (1048576)
+0019.129 (0) Googledrive chunked upload: 8.5 % uploaded (2097152)
+0019.429 (0) Googledrive chunked upload: 12.8 % uploaded (3145728)
+0019.714 (0) Googledrive chunked upload: 17 % uploaded (4194304)
+0020.015 (0) Googledrive chunked upload: 21.3 % uploaded (5242880)
+0020.343 (0) Googledrive chunked upload: 25.6 % uploaded (6291456)
+0020.676 (0) Googledrive chunked upload: 29.8 % uploaded (7340032)
+0020.982 (0) Googledrive chunked upload: 34.1 % uploaded (8388608)
+0021.356 (0) Googledrive chunked upload: 38.4 % uploaded (9437184)
+0021.680 (0) Googledrive chunked upload: 42.6 % uploaded (10485760)
+0021.941 (0) Googledrive chunked upload: 46.9 % uploaded (11534336)
+0022.266 (0) Googledrive chunked upload: 51.1 % uploaded (12582912)
+0022.586 (0) Googledrive chunked upload: 55.4 % uploaded (13631488)
+0022.924 (0) Googledrive chunked upload: 59.7 % uploaded (14680064)
+0023.237 (0) Googledrive chunked upload: 63.9 % uploaded (15728640)
+0023.552 (0) Googledrive chunked upload: 68.2 % uploaded (16777216)
+0023.980 (0) Googledrive chunked upload: 72.5 % uploaded (17825792)
+0024.280 (0) Googledrive chunked upload: 76.7 % uploaded (18874368)
+0024.588 (0) Googledrive chunked upload: 81 % uploaded (19922944)
+0024.905 (0) Googledrive chunked upload: 85.2 % uploaded (20971520)
+0025.207 (0) Googledrive chunked upload: 89.5 % uploaded (22020096)
+0025.524 (0) Googledrive chunked upload: 93.8 % uploaded (23068672)
+0025.840 (0) Googledrive chunked upload: 98 % uploaded (24117248)
+0027.376 (0) Googledrive chunked upload: 100 % uploaded (24117248)
+0027.387 (0) Google Drive: OK: Archive backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip uploaded in 9.26 seconds
+0027.391 (0) Recording as successfully uploaded: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip
+0027.410 (0) Deleting local file: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-plugins.zip: OK
+0027.610 (0) Google Drive: quota usage: used=172.2 MB, total=15360 MB, available=15187.8 MB
+0027.614 (0) Google Drive: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-themes.zip: Attempting to upload to Google Drive (into folder id: 1cWqOMvI0r5pDbL_GaU2d8qqiPSllULpL)
+0028.315 (0) Googledrive chunked upload: 27.8 % uploaded (1048576)
+0028.610 (0) Googledrive chunked upload: 55.5 % uploaded (2097152)
+0028.941 (0) Googledrive chunked upload: 83.3 % uploaded (3145728)
+0030.133 (0) Googledrive chunked upload: 100 % uploaded (3145728)
+0030.147 (0) Google Drive: OK: Archive backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-themes.zip uploaded in 2.53 seconds
+0030.151 (0) Recording as successfully uploaded: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-themes.zip
+0030.160 (0) Deleting local file: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-themes.zip: OK
+0030.334 (0) Google Drive: quota usage: used=195.7 MB, total=15360 MB, available=15164.3 MB
+0030.339 (0) Google Drive: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-uploads.zip: Attempting to upload to Google Drive (into folder id: 1cWqOMvI0r5pDbL_GaU2d8qqiPSllULpL)
+0031.160 (0) Googledrive chunked upload: 1.8 % uploaded (1048576)
+0031.466 (0) Googledrive chunked upload: 3.7 % uploaded (2097152)
+0031.746 (0) Googledrive chunked upload: 5.5 % uploaded (3145728)
+0032.039 (0) Googledrive chunked upload: 7.4 % uploaded (4194304)
+0032.319 (0) Googledrive chunked upload: 9.2 % uploaded (5242880)
+0032.626 (0) Googledrive chunked upload: 11.1 % uploaded (6291456)
+0032.929 (0) Googledrive chunked upload: 12.9 % uploaded (7340032)
+0033.329 (0) Googledrive chunked upload: 14.7 % uploaded (8388608)
+0033.629 (0) Googledrive chunked upload: 16.6 % uploaded (9437184)
+0033.920 (0) Googledrive chunked upload: 18.4 % uploaded (10485760)
+0034.302 (0) Googledrive chunked upload: 20.3 % uploaded (11534336)
+0034.637 (0) Googledrive chunked upload: 22.1 % uploaded (12582912)
+0034.926 (0) Googledrive chunked upload: 24 % uploaded (13631488)
+0035.244 (0) Googledrive chunked upload: 25.8 % uploaded (14680064)
+0035.543 (0) Googledrive chunked upload: 27.7 % uploaded (15728640)
+0035.858 (0) Googledrive chunked upload: 29.5 % uploaded (16777216)
+0036.148 (0) Googledrive chunked upload: 31.3 % uploaded (17825792)
+0036.433 (0) Googledrive chunked upload: 33.2 % uploaded (18874368)
+0036.900 (0) Googledrive chunked upload: 35 % uploaded (19922944)
+0037.372 (0) Googledrive chunked upload: 36.9 % uploaded (20971520)
+0037.627 (0) Googledrive chunked upload: 38.7 % uploaded (22020096)
+0037.983 (0) Googledrive chunked upload: 40.6 % uploaded (23068672)
+0038.285 (0) Googledrive chunked upload: 42.4 % uploaded (24117248)
+0038.582 (0) Googledrive chunked upload: 44.2 % uploaded (25165824)
+0038.958 (0) Googledrive chunked upload: 46.1 % uploaded (26214400)
+0039.273 (0) Googledrive chunked upload: 47.9 % uploaded (27262976)
+0039.647 (0) Googledrive chunked upload: 49.8 % uploaded (28311552)
+0039.977 (0) Googledrive chunked upload: 51.6 % uploaded (29360128)
+0040.253 (0) Googledrive chunked upload: 53.5 % uploaded (30408704)
+0040.536 (0) Googledrive chunked upload: 55.3 % uploaded (31457280)
+0040.902 (0) Googledrive chunked upload: 57.1 % uploaded (32505856)
+0041.203 (0) Googledrive chunked upload: 59 % uploaded (33554432)
+0041.508 (0) Googledrive chunked upload: 60.8 % uploaded (34603008)
+0041.809 (0) Googledrive chunked upload: 62.7 % uploaded (35651584)
+0042.204 (0) Googledrive chunked upload: 64.5 % uploaded (36700160)
+0042.514 (0) Googledrive chunked upload: 66.4 % uploaded (37748736)
+0042.840 (0) Googledrive chunked upload: 68.2 % uploaded (38797312)
+0043.117 (0) Googledrive chunked upload: 70 % uploaded (39845888)
+0043.430 (0) Googledrive chunked upload: 71.9 % uploaded (40894464)
+0043.692 (0) Googledrive chunked upload: 73.7 % uploaded (41943040)
+0044.071 (0) Googledrive chunked upload: 75.6 % uploaded (42991616)
+0044.333 (0) Googledrive chunked upload: 77.4 % uploaded (44040192)
+0044.632 (0) Googledrive chunked upload: 79.3 % uploaded (45088768)
+0044.919 (0) Googledrive chunked upload: 81.1 % uploaded (46137344)
+0045.223 (0) Googledrive chunked upload: 83 % uploaded (47185920)
+0045.510 (0) Googledrive chunked upload: 84.8 % uploaded (48234496)
+0045.832 (0) Googledrive chunked upload: 86.6 % uploaded (49283072)
+0046.133 (0) Googledrive chunked upload: 88.5 % uploaded (50331648)
+0046.484 (0) Googledrive chunked upload: 90.3 % uploaded (51380224)
+0046.774 (0) Googledrive chunked upload: 92.2 % uploaded (52428800)
+0047.156 (0) Googledrive chunked upload: 94 % uploaded (53477376)
+0047.460 (0) Googledrive chunked upload: 95.9 % uploaded (54525952)
+0047.746 (0) Googledrive chunked upload: 97.7 % uploaded (55574528)
+0048.080 (0) Googledrive chunked upload: 99.5 % uploaded (56623104)
+0049.311 (0) Googledrive chunked upload: 100 % uploaded (56623104)
+0049.323 (0) Google Drive: OK: Archive backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-uploads.zip uploaded in 18.98 seconds
+0049.326 (0) Recording as successfully uploaded: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-uploads.zip
+0049.347 (0) Deleting local file: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-uploads.zip: OK
+0049.505 (0) Google Drive: quota usage: used=253.5 MB, total=15360 MB, available=15106.5 MB
+0049.510 (0) Google Drive: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-others.zip: Attempting to upload to Google Drive (into folder id: 1cWqOMvI0r5pDbL_GaU2d8qqiPSllULpL)
+0051.162 (0) Googledrive chunked upload: 100 % uploaded
+0051.174 (0) Google Drive: OK: Archive backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-others.zip uploaded in 1.66 seconds
+0051.178 (0) Recording as successfully uploaded: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-others.zip
+0051.186 (0) Deleting local file: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-others.zip: OK
+0051.363 (0) Google Drive: quota usage: used=253.5 MB, total=15360 MB, available=15106.5 MB
+0051.368 (0) Google Drive: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db.gz: Attempting to upload to Google Drive (into folder id: 1cWqOMvI0r5pDbL_GaU2d8qqiPSllULpL)
+0052.904 (0) Googledrive chunked upload: 100 % uploaded
+0052.919 (0) Google Drive: OK: Archive backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db.gz uploaded in 1.55 seconds
+0052.924 (0) Recording as successfully uploaded: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db.gz
+0052.936 (0) Deleting local file: backup_2021-01-14-0050_seniortestingclub_1db7d31378a4-db.gz: OK
+0052.955 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0052.962 (0) Number of backup sets in history: 5; groups (db): 1
+0052.966 (0) Examining (for databases) backup set with group_id=0, nonce=1db7d31378a4, datestamp=1610556659 (Jan 13 2021 16:50:59)
+0052.970 (0) This backup set is the backup set just made, so will not be deleted.
+0052.970 (0) Examining (for databases) backup set with group_id=0, nonce=f6e04c391ced, datestamp=1610469983 (Jan 12 2021 16:46:23)
+0052.970 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0052.974 (0) Examining (for databases) backup set with group_id=0, nonce=63aafc1dabda, datestamp=1610384626 (Jan 11 2021 17:03:46)
+0052.974 (0) 1610384626: db: this set includes a database (backup_2021-01-12-0103_seniortestingclub_63aafc1dabda-db.gz); db count is now 2
+0052.974 (0) 1610384626: db: over retain limit (2); will delete this database
+0052.974 (0) Delete file: backup_2021-01-12-0103_seniortestingclub_63aafc1dabda-db.gz, service=googledrive
+0054.027 (0) Google Drive: backup_2021-01-12-0103_seniortestingclub_63aafc1dabda-db.gz: Deletion successful
+0054.037 (0) This backup set is now empty; will remove from history
+0054.042 (0) Deleting log file (log.63aafc1dabda.txt)
+0054.046 (0) Examining (for databases) backup set with group_id=0, nonce=5fb2be32e041, datestamp=1609952020 (Jan 06 2021 16:53:40)
+0054.046 (0) Examining (for databases) backup set with group_id=0, nonce=3db7e3ac1ee1, datestamp=1609349231 (Dec 30 2020 17:27:11)
+0054.046 (0) Number of backup sets in history: 4; groups (files): 1
+0054.050 (0) Examining (for files) backup set with nonce=1db7d31378a4, datestamp=1610556659 (Jan 13 2021 16:50:59)
+0054.051 (0) This backup set is the backup set just made, so will not be deleted.
+0054.054 (0) This backup set is the backup set just made, so will not be deleted.
+0054.054 (0) This backup set is the backup set just made, so will not be deleted.
+0054.054 (0) This backup set is the backup set just made, so will not be deleted.
+0054.054 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0054.059 (0) Examining (for files) backup set with nonce=f6e04c391ced, datestamp=1610469983 (Jan 12 2021 16:46:23)
+0054.059 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0054.062 (0) Examining (for files) backup set with nonce=5fb2be32e041, datestamp=1609952020 (Jan 06 2021 16:53:40)
+0054.062 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0054.067 (0) Examining (for files) backup set with nonce=3db7e3ac1ee1, datestamp=1609349231 (Dec 30 2020 17:27:11)
+0054.067 (0) plugins: over retain limit (2); will delete this file entity
+0054.067 (0) themes: over retain limit (2); will delete this file entity
+0054.067 (0) uploads: over retain limit (2); will delete this file entity
+0054.067 (0) others: over retain limit (2); will delete this file entity
+0054.068 (0) Delete file: backup_2020-12-31-0127_seniortestingclub_3db7e3ac1ee1-plugins.zip, service=googledrive
+0054.074 (0) Delete file: backup_2020-12-31-0127_seniortestingclub_3db7e3ac1ee1-themes.zip, service=googledrive
+0054.078 (0) Delete file: backup_2020-12-31-0127_seniortestingclub_3db7e3ac1ee1-uploads.zip, service=googledrive
+0054.082 (0) Delete file: backup_2020-12-31-0127_seniortestingclub_3db7e3ac1ee1-others.zip, service=googledrive
+0056.053 (0) Google Drive: backup_2020-12-31-0127_seniortestingclub_3db7e3ac1ee1-others.zip: Deletion successful
+0056.427 (0) Google Drive: backup_2020-12-31-0127_seniortestingclub_3db7e3ac1ee1-uploads.zip: Deletion successful
+0057.146 (0) Google Drive: backup_2020-12-31-0127_seniortestingclub_3db7e3ac1ee1-themes.zip: Deletion successful
+0057.584 (0) Google Drive: backup_2020-12-31-0127_seniortestingclub_3db7e3ac1ee1-plugins.zip: Deletion successful
+0057.595 (0) This backup set is now empty; will remove from history
+0057.599 (0) Deleting log file (log.3db7e3ac1ee1.txt)
+0057.604 (0) Retain: saving new backup history (sets now: 3) and finishing retain operation
+0057.619 (0) Resume backup (1db7d31378a4, 0): finish run
+0057.631 (0) Decremented the semaphore (fd) by 1
+0057.639 (0) Semaphore (fd) unlocked
+0057.643 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0057.657 (0) The backup apparently succeeded and is now complete
+0057.662 (0) Fetching RSS news feed
+0057.772 (0) Fetched RSS news feed; result is a: SimplePie
+0057.809 (0) Sending email ('文件和数据库 (完全备份)') report (attachments: 0, size: 0 KB) to: alter...
+0058.077 (0) 备份显然是成功的，现在已经完成了。

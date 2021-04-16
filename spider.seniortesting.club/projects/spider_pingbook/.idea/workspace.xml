@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dfd0f383-32e1-406a-896a-bd49e98cbddb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_pingbook/Pipfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_pingbook/Pipfile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_pingbook/scrapy.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_pingbook/spider_pingbook/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_pingbook/spider_pingbook/dao/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_pingbook/spider_pingbook/dao/basedao.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_pingbook/spider_pingbook/items.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_pingbook/spider_pingbook/middlewares.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_pingbook/spider_pingbook/pipelines.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_pingbook/spider_pingbook/run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_pingbook/spider_pingbook/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_pingbook/spider_pingbook/spiders/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_pingbook/spider_pingbook/spiders/maomi/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_pingbook/spider_pingbook/spiders/maomi/maomi_china.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_pingbook/spider_pingbook/spiders/maomi/maomi_china_selfie.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_pingbook/spider_pingbook/spiders/maomi/maomi_shortvideo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_pingbook/spider_pingbook/spiders/maomi/shortvideo_dao.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_pingbook/spider_pingbook/useragents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_pingbook/spider_pingbook/util/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_pingbook/test/downloademoji.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_pingbook/test/testreg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_yanzhi/Pipfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_yanzhi/Pipfile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_yanzhi/scrapy.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_yanzhi/spider_yanzhi/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_yanzhi/spider_yanzhi/items.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_yanzhi/spider_yanzhi/middlewares.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_yanzhi/spider_yanzhi/pipelines.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_yanzhi/spider_yanzhi/run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_yanzhi/spider_yanzhi/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_yanzhi/spider_yanzhi/spiders/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_yanzhi/spider_yanzhi/spiders/dao/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_yanzhi/spider_yanzhi/spiders/dao/basedao.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_yanzhi/spider_yanzhi/spiders/dao/vrpanonewsdao.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_yanzhi/spider_yanzhi/spiders/vrpano_news.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_yanzhi/spider_yanzhi/useragents.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_zxtj/Pipfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_zxtj/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_zxtj/scrapy.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_zxtj/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_zxtj/spider_zxtj/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_zxtj/spider_zxtj/create_table.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_zxtj/spider_zxtj/items.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_zxtj/spider_zxtj/middlewares.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_zxtj/spider_zxtj/pipelines.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_zxtj/spider_zxtj/run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_zxtj/spider_zxtj/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_zxtj/spider_zxtj/spiders/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_zxtj/spider_zxtj/spiders/csgbidding.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_zxtj/spider_zxtj/spiders/dao/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_zxtj/spider_zxtj/spiders/dao/basedao.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_zxtj/spider_zxtj/spiders/dao/zxtjbiddingdao.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/gerapy/projects/spider_zxtj/spider_zxtj/spiders/hainanbidding.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../spider-python/spider_service/app/spider/selenium/webdriver.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../spider-python/spider_service/app/spider/selenium/webdriver.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JupyterTrust" id="851937cc-c28e-471d-b0dc-86a69d18782c" />
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="#JAVA_HOME" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YWQQ62NCfZfOKqF0gFozXRBVL0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spider_yanzhi" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.3643678" />
+    <property name="settings.editor.selected.configurable" value="spring.boot" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Workspace\spider-python\gerapy\projects\spider_pingbook\spider_pingbook" />
+      <recent name="D:\Workspace\spider-python\gerapy\projects\spider_pingbook\spider_pingbook\spiders\maomi" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Workspace\z-scaffold\spider-python\gerapy\projects\spider_pingbook\spider_pingbook\spiders" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.run">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="downloademoji" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="spider_pingbook" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/downloademoji.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="spider_pingbook" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/spider_pingbook" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider_pingbook/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="testreg" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="spider_pingbook" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/testreg.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.run" />
+        <item itemvalue="Python.testreg" />
+        <item itemvalue="Python.downloademoji" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dfd0f383-32e1-406a-896a-bd49e98cbddb" name="Default Changelist" comment="" />
+      <created>1583055850512</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583055850512</updated>
+      <workItem from="1583055851745" duration="7437000" />
+      <workItem from="1583065976343" duration="4617000" />
+      <workItem from="1583215225321" duration="229000" />
+      <workItem from="1583216347650" duration="1278000" />
+      <workItem from="1583217743095" duration="403000" />
+      <workItem from="1583376198849" duration="636000" />
+      <workItem from="1583592173825" duration="4035000" />
+      <workItem from="1583634023307" duration="41000" />
+      <workItem from="1583906650030" duration="2491000" />
+      <workItem from="1584180229524" duration="2754000" />
+      <workItem from="1584185417540" duration="31000" />
+      <workItem from="1584188180813" duration="1828000" />
+      <workItem from="1584288543633" duration="469000" />
+      <workItem from="1584344477254" duration="3956000" />
+      <workItem from="1584349062304" duration="2088000" />
+      <workItem from="1584373879431" duration="815000" />
+      <workItem from="1584512737874" duration="266000" />
+      <workItem from="1584513019411" duration="1624000" />
+      <workItem from="1584547418908" duration="657000" />
+      <workItem from="1584686908917" duration="748000" />
+      <workItem from="1584689516898" duration="547000" />
+      <workItem from="1584690073302" duration="2755000" />
+      <workItem from="1584855592904" duration="1425000" />
+      <workItem from="1585495087443" duration="469000" />
+      <workItem from="1585546568062" duration="43000" />
+      <workItem from="1585751870785" duration="465000" />
+      <workItem from="1585978967946" duration="1653000" />
+      <workItem from="1586008453871" duration="19000" />
+      <workItem from="1586437342831" duration="1085000" />
+      <workItem from="1591685348259" duration="24000" />
+      <workItem from="1592893735023" duration="1176000" />
+      <workItem from="1594478986429" duration="86000" />
+      <workItem from="1594479091058" duration="9000" />
+      <workItem from="1594479116216" duration="634000" />
+      <workItem from="1594481354014" duration="249000" />
+      <workItem from="1594481617061" duration="90000" />
+      <workItem from="1594481722487" duration="59000" />
+      <workItem from="1594481796727" duration="19000" />
+      <workItem from="1594609912631" duration="126000" />
+      <workItem from="1594610119795" duration="38000" />
+      <workItem from="1594610463950" duration="16000" />
+      <workItem from="1594610585379" duration="25000" />
+      <workItem from="1595905059134" duration="1671000" />
+      <workItem from="1596008094923" duration="4591000" />
+      <workItem from="1596101951928" duration="13095000" />
+      <workItem from="1596159978214" duration="679000" />
+      <workItem from="1596189006051" duration="786000" />
+      <workItem from="1596242841415" duration="599000" />
+      <workItem from="1596873816839" duration="66000" />
+      <workItem from="1596877554657" duration="1368000" />
+      <workItem from="1596891500732" duration="453000" />
+      <workItem from="1597027311512" duration="19000" />
+      <workItem from="1598627602278" duration="168000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="Pipfile" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.cfg" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="128" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1597027314576">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="128" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.864@0.0.1536.864" timestamp="1597027314576" />
+    <state x="43" y="268" width="1014" height="596" key="#xdebugger.evaluate" timestamp="1596106751308">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="43" y="268" width="1014" height="596" key="#xdebugger.evaluate/0.0.1536.864@0.0.1536.864" timestamp="1596106751308" />
+    <state width="984" height="452" key="DebuggerActiveHint" timestamp="1596106945679">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="984" height="452" key="DebuggerActiveHint/0.0.1536.864@0.0.1536.864" timestamp="1596106945679" />
+    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1598627768044">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1598627768044" />
+    <state width="1478" height="292" key="GridCell.Tab.0.bottom" timestamp="1598627769864">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1478" height="292" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1598627769864" />
+    <state width="1478" height="292" key="GridCell.Tab.0.center" timestamp="1598627769864">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1478" height="292" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1598627769864" />
+    <state width="1478" height="292" key="GridCell.Tab.0.left" timestamp="1598627769864">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1478" height="292" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1598627769864" />
+    <state width="1478" height="292" key="GridCell.Tab.0.right" timestamp="1598627769864">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1478" height="292" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1598627769864" />
+    <state width="1492" height="209" key="GridCell.Tab.1.bottom" timestamp="1596878460517">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1492" height="209" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1596878460517" />
+    <state width="1492" height="209" key="GridCell.Tab.1.center" timestamp="1596878460517">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1492" height="209" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1596878460517" />
+    <state width="1492" height="209" key="GridCell.Tab.1.left" timestamp="1596878460517">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1492" height="209" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1596878460517" />
+    <state width="1492" height="209" key="GridCell.Tab.1.right" timestamp="1596878460517">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1492" height="209" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1596878460517" />
+    <state x="312" y="13" key="SettingsEditor" timestamp="1598627702234">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="312" y="13" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1598627702234" />
+    <state width="775" height="439" key="XDebugger.FullValuePopup" timestamp="1596105802841">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="775" height="439" key="XDebugger.FullValuePopup/0.0.1536.864@0.0.1536.864" timestamp="1596105802841" />
+    <state x="178" y="92" key="new project wizard" timestamp="1594609994492">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="178" y="92" key="new project wizard/0.0.1536.864@0.0.1536.864" timestamp="1594609994492" />
+    <state x="430" y="143" width="672" height="720" key="search.everywhere.popup" timestamp="1596104826414">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="430" y="143" width="672" height="720" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1596104826414" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/spider_pingbook$testreg.coverage" NAME="testreg Coverage Results" MODIFIED="1594481769934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/spider_pingbook$run.coverage" NAME="run Coverage Results" MODIFIED="1598627756849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider_pingbook" />
+    <SUITE FILE_PATH="coverage/spider_pingbook$downloademoji.coverage" NAME="downloademoji Coverage Results" MODIFIED="1592894306628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+  </component>
+</project>
